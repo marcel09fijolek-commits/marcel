@@ -1,0 +1,397 @@
+<!-- Strona 66 | Historia | https://parafiagrzmiaca.pl/historia-kosciola/ | zmieniona 2026-09-04T17:31:13 | featured_media 1175 -->
+
+<style>
+.kx{--kx-navy:#1E3A5F;--kx-navy-dark:#12233A;--kx-gold:#C9A24B;--kx-gold-light:#F4E9D3;--kx-cream:#F1ECE0;--kx-text:#26313F;--kx-muted:#5B6B7D;--kx-border:#DED2B0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--kx-text);max-width:900px;margin:0 auto;padding:10px 16px 40px;background:var(--kx-cream)}
+.kx-hero{background:linear-gradient(135deg,var(--kx-navy) 0%,var(--kx-navy-dark) 100%);border-radius:20px;padding:44px 32px;text-align:center;color:#fff;margin-bottom:44px;position:relative;overflow:hidden}
+.kx-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:5px;background:var(--kx-gold)}
+.kx-hero h2{margin:0 0 10px;font-size:clamp(24px,3.5vw,32px);font-weight:700;line-height:1.3}
+.kx-hero p{margin:0;font-size:17px;color:var(--kx-gold-light);opacity:.95}
+.kx-loc{background:#fff;border:1px solid var(--kx-border);border-radius:24px;overflow:hidden;margin-bottom:44px;box-shadow:0 10px 28px rgba(30,58,95,.1)}
+.kx-loc-index{position:absolute;top:18px;left:18px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(4px);border:1.5px solid rgba(255,255,255,.5);color:#fff;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;z-index:2}
+.kx-loc-banner{position:relative}
+.kx-loc-banner img{width:100%;height:270px;object-fit:cover;display:block}
+.kx-loc-banner-overlay{position:absolute;left:0;right:0;bottom:0;padding:22px 26px;background:linear-gradient(0deg,rgba(18,35,58,.9) 0%,rgba(18,35,58,.4) 65%,rgba(18,35,58,0) 100%)}
+.kx-loc-badge{display:inline-block;background:var(--kx-gold);color:var(--kx-navy-dark);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:4px 14px;border-radius:20px;margin-bottom:8px}
+.kx-loc-banner-overlay h3{margin:0;font-size:28px;color:#fff;font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.3)}
+.kx-loc-inner{padding:26px 28px 32px;border-top:4px solid var(--kx-gold)}
+.kx-loc-body p{font-size:15.5px;line-height:1.75;text-align:justify;color:var(--kx-text);margin:0 0 15px}
+.kx-loc-body p:last-child{margin-bottom:0}
+.kx-priest-list{background:var(--kx-gold-light);border:1px solid #E7D9AE;border-radius:14px;padding:15px 20px;font-size:14px;color:#5A4A24;line-height:1.7;margin:16px 0}
+.kx-priest-list strong{color:var(--kx-navy)}
+.kx-loc-gallery{display:flex;gap:12px;margin-top:20px}
+.kx-loc-gallery a{flex:1;display:block;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px rgba(30,58,95,.1)}
+.kx-loc-gallery img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .3s ease}
+.kx-loc-gallery a:hover img{transform:scale(1.05)}
+@media (max-width:600px){.kx-hero{padding:32px 20px}.kx-loc-banner img{height:190px}.kx-loc-banner-overlay h3{font-size:22px}.kx-loc-inner{padding:20px 20px 26px}.kx-loc-gallery{flex-direction:column}.kx-loc-gallery img{height:180px}}
+.kx-timeline-connector{width:3px;height:34px;background:linear-gradient(var(--kx-gold),var(--kx-border));margin:-20px auto 10px;opacity:.7;border-radius:2px}
+
+.kxg-wrap{margin-bottom:44px}
+.kxg-card{background:#fff;border:1px solid var(--kx-border);border-radius:24px;box-shadow:0 10px 28px rgba(30,58,95,.1);padding:30px 26px;position:relative;overflow:hidden}
+.kxg-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--kx-gold)}
+.kxg-eyebrow{display:inline-block;background:var(--kx-gold);color:var(--kx-navy-dark);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:4px 14px;border-radius:20px;margin-bottom:14px}
+.kxg-card h3{margin:0 0 10px;font-size:24px;color:var(--kx-navy);font-weight:700}
+.kxg-card p.kxg-lead{margin:0 0 22px;color:var(--kx-muted);font-size:15px;line-height:1.6}
+.kxg-btn{display:inline-flex;align-items:center;gap:8px;background:var(--kx-navy);color:#fff;border:none;padding:14px 26px;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s ease, transform .2s ease}
+.kxg-btn:hover{background:var(--kx-navy-dark);transform:translateY(-2px)}
+.kxg-btn.kxg-btn-gold{background:var(--kx-gold);color:var(--kx-navy-dark)}
+.kxg-btn.kxg-btn-gold:hover{background:#b8913f}
+.kxg-path{display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin:24px 0 28px;position:relative}
+.kxg-path::before{content:'';position:absolute;top:19px;left:6%;right:6%;height:2px;background:var(--kx-border);z-index:0}
+.kxg-stop{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;text-align:center}
+.kxg-stop-dot{width:38px;height:38px;border-radius:50%;background:#fff;border:2.5px solid var(--kx-border);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--kx-muted);font-size:14px;transition:all .3s ease}
+.kxg-stop.active .kxg-stop-dot{border-color:var(--kx-navy);color:var(--kx-navy);box-shadow:0 0 0 4px rgba(30,58,95,.12)}
+.kxg-stop.done .kxg-stop-dot{background:var(--kx-gold);border-color:var(--kx-gold);color:var(--kx-navy-dark)}
+.kxg-stop-name{font-size:11.5px;color:var(--kx-muted);font-weight:600}
+.kxg-stop.active .kxg-stop-name{color:var(--kx-navy);font-weight:700}
+.kxg-qcount{font-size:13px;color:var(--kx-muted);font-weight:600;margin-bottom:8px}
+.kxg-question h4{font-size:18px;color:var(--kx-navy);margin:0 0 18px;line-height:1.4}
+.kxg-options{display:flex;flex-direction:column;gap:10px;margin-bottom:6px}
+.kxg-option{text-align:left;background:var(--kx-cream);border:2px solid var(--kx-border);border-radius:12px;padding:13px 16px;font-size:14.5px;color:var(--kx-text);cursor:pointer;transition:all .2s ease;width:100%}
+.kxg-option:hover{border-color:var(--kx-gold)}
+.kxg-option.kxg-correct{background:#E7F4E8;border-color:#5FA36A;color:#245C2E;font-weight:700}
+.kxg-option.kxg-wrong{background:#FBE7E5;border-color:#C96A5F;color:#7A2E24}
+.kxg-option[disabled]{cursor:default}
+.kxg-fact{background:var(--kx-gold-light);border:1px solid #E7D9AE;border-radius:14px;padding:14px 18px;font-size:14px;color:#5A4A24;line-height:1.6;margin:16px 0}
+.kxg-fact strong{color:var(--kx-navy)}
+.kxg-stampburst{text-align:center;padding:16px 0}
+.kxg-stamp-icon{width:84px;height:84px;border-radius:50%;background:var(--kx-gold);color:var(--kx-navy-dark);display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px;box-shadow:0 6px 18px rgba(201,162,75,.4);animation:kxgPop .5s ease}
+@keyframes kxgPop{0%{transform:scale(0)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+.kxg-passport{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0}
+.kxg-pstamp{background:var(--kx-cream);border:2px dashed var(--kx-border);border-radius:14px;padding:14px 8px;text-align:center}
+.kxg-pstamp.done{background:var(--kx-gold-light);border:2px solid var(--kx-gold);border-style:solid}
+.kxg-pstamp-icon{font-size:26px;margin-bottom:6px}
+.kxg-pstamp-name{font-size:11.5px;font-weight:700;color:var(--kx-navy)}
+.kxg-score{text-align:center;padding:8px 0 4px}
+.kxg-score-num{font-size:44px;font-weight:800;color:var(--kx-navy)}
+.kxg-score-title{display:inline-block;margin-top:8px;background:var(--kx-navy);color:var(--kx-gold-light);font-weight:700;font-size:14px;padding:8px 20px;border-radius:20px}
+.kxg-best{font-size:13px;color:var(--kx-muted);text-align:center;margin-top:10px}
+.kxg-actions{display:flex;gap:12px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+@media (max-width:600px){.kxg-card{padding:22px 18px}.kxg-stop-name{display:none}.kxg-passport{grid-template-columns:repeat(2,1fr)}}
+</style>
+<div class="kx">
+    <div class="kx-hero kx-reveal">
+        <h2>Historia kościoła i parafii w Grzmiącej</h2>
+        <p>Cztery miejsca, jedna wspólnota — wieki historii tych ziem</p>
+    </div>
+    <div class="kxg-wrap" id="pielgrzymka">
+        <div class="kxg-card"><div id="kxgScreen"></div></div>
+    </div>
+    <script>
+var KXG_DATA = [
+  {
+    id:'grzmiaca', name:'Grzmiąca', era:'ok. 1600 r.', icon:'⛪',
+    questions:[
+      {q:'W jakim stylu pierwotnie zbudowano kościół w Grzmiącej?', opts:['Późnogotyckim z elementami barokowymi','Romańskim','Secesyjnym'], correct:0, fact:'Kościół powstał ok. 1600 r., a jego bryła była później przebudowywana w 1768 i 1856 r.'},
+      {q:'Do którego roku kościół w Grzmiącej pełnił funkcję świątyni protestanckiej?', opts:['1918','1945','1972'], correct:1, fact:'Po II wojnie światowej i zmianie granic budynek przekazano Kościołowi katolickiemu i poświęcono ponownie 25 grudnia 1945 r.'},
+      {q:'Pod jakim wezwaniem istnieje parafia w Grzmiącej od 16 października 1946 r.?', opts:['św. Stanisława','Matki Bożej Królowej Polski','Miłosierdzia Bożego'], correct:1, fact:'Odpust parafialny obchodzony jest co roku 3 maja.'},
+      {q:'Co znajduje się na zewnętrznej ścianie kościoła w Grzmiącej, za krzyżem misyjnym?', opts:['Tablica fundatorów','Pruski reper geodezyjny','Zegar słoneczny'], correct:1, fact:'To zabytkowy znak wysokościowy wskazujący rzędną 102,413 m n.p.m.'},
+      {q:'Ilu proboszczów posługiwało w Grzmiącej od 1946 roku do dziś?', opts:['4','6','9'], correct:1, fact:'Od ks. Władysława Pogorzelskiego (1946–1955) do obecnego ks. Mariusza Kuropatnickiego (od 2022 r.).'}
+    ]
+  },
+  {
+    id:'mieszalki', name:'Mieszałki', era:'1884–1885', icon:'🔔',
+    questions:[
+      {q:'W jakim stylu zbudowano kościół w Mieszałkach?', opts:['Neogotyckim','Barokowym','Modernistycznym'], correct:0, fact:'Wzniesiono go w latach 1884–1885, pierwotnie jako świątynię protestancką.'},
+      {q:'Kiedy erygowano samodzielną parafię w Mieszałkach pw. św. Józefa?', opts:['1946','1957','1972'], correct:1, fact:'Wcześniej, od 1946 r., życie religijne było pod opieką kapłanów z Grzmiącej.'},
+      {q:'Co przedstawia oryginalny witraż w prezbiterium kościoła w Mieszałkach?', opts:['Matkę Bożą Częstochowską','Chrystusa na tle gotyckiego portalu','św. Józefa z Dzieciątkiem'], correct:1, fact:'Witraż otoczony jest kolorową bordiurą i jest jednym z najcenniejszych elementów wnętrza.'},
+      {q:'Jakie nabożeństwo odprawiane jest w Mieszałkach 13. dnia każdego miesiąca (maj–październik)?', opts:['Nabożeństwo Fatimskie','Droga Krzyżowa','Nabożeństwo Różańcowe'], correct:0, fact:'Towarzyszy mu procesja światła wokół kościoła.'},
+      {q:'Co stało się z parafią w Mieszałkach w sierpniu 2022 r.?', opts:['Powiększono jej obszar','Została zniesiona i przyłączona do Grzmiącej','Zmieniono jej patrona'], correct:1, fact:'To efekt reorganizacji administracyjnej Diecezji Koszalińsko-Kołobrzeskiej.'}
+    ]
+  },
+  {
+    id:'nosibady', name:'Nosibądy', era:'I poł. XVI w.', icon:'🏛️',
+    questions:[
+      {q:'Z czego wykonana jest najstarsza, środkowa część kościoła w Nosibądach?', opts:['Z cegły','Z kamieni polnych','Z drewna'], correct:1, fact:'Ta część pochodzi z pierwszej połowy XVI wieku.'},
+      {q:'Co dobudowano do kościoła w Nosibądach w 1775 roku?', opts:['Zakrystię','Szachulcową wieżę z 8-bocznym hełmem','Kruchtę'], correct:1, fact:'Wieża ma trzy kondygnacje.'},
+      {q:'Pod czyim wezwaniem jest kościół w Nosibądach?', opts:['św. Stanisława, biskupa i męczennika','św. Wojciecha','Wniebowzięcia NMP'], correct:0, fact:'Doroczny odpust przeżywany jest tam 8 maja.'},
+      {q:'Dlaczego kościół w Nosibądach jest od 2020 roku wyłączony z użytku?', opts:['Brak księdza','Zły stan techniczny','Spór własnościowy'], correct:1, fact:'W 2024 r. udało się wymienić więźbę i pokrycie dachu, ale remontu nie ukończono z braku środków.'},
+      {q:'Gdzie obecnie sprawowane są Msze święte dla mieszkańców Nosibądów?', opts:['W kaplicy cmentarnej','W świetlicy wiejskiej','W kościele w Grzmiącej'], correct:1, fact:'Społeczność Nosibądów liczy ok. 180 osób.'}
+    ]
+  },
+  {
+    id:'sucha', name:'Sucha', era:'1993 r.', icon:'🕊️',
+    questions:[
+      {q:'Z czego powstała kaplica w Suchej?', opts:['Z dawnej remizy strażackiej','Z dawnej szkoły','Z dworku'], correct:0, fact:'Budynek zakupiła i zaadaptowała miejscowa społeczność po upadku PGR-ów.'},
+      {q:'Jakiemu wezwaniu poświęcona jest kaplica w Suchej?', opts:['Miłosierdzia Bożego','Matki Bożej Fatimskiej','Chrystusa Króla'], correct:0, fact:'Poświęcona w 1993 roku.'},
+      {q:'Kiedy w Suchej odbywa się Msza odpustowa i Godzina Miłosierdzia?', opts:['W Wielki Piątek','W II Niedzielę Wielkanocy','W Uroczystość Wszystkich Świętych'], correct:1, fact:'Msza o 14:00, modlitwa w Godzinie Miłosierdzia od 15:00.'},
+      {q:'Które miejsce pod względem liczby mieszkańców zajmuje Sucha w Gminie Grzmiąca?', opts:['Pierwsze','Trzecie','Piąte'], correct:1, fact:'Mimo to starania o własną kaplicę trwały już od końca lat 70.'}
+    ]
+  }
+];
+
+(function(){
+  var screen = document.getElementById('kxgScreen');
+  if (!screen) { return; }
+  var state = { stop:0, q:0, score:0, answered:false, stamps:[] };
+
+  function saveBest(score, total){
+    try {
+      var best = localStorage.getItem('kxgBest');
+      var bestNum = best !== null ? parseInt(best,10) : 0;
+      if (score > bestNum) {
+        localStorage.setItem('kxgBest', String(score));
+        bestNum = score;
+      }
+      return bestNum;
+    } catch(e){
+      return score;
+    }
+  }
+  function getBest(){
+    try {
+      var best = localStorage.getItem('kxgBest');
+      return best !== null ? parseInt(best,10) : null;
+    } catch(e){
+      return null;
+    }
+  }
+
+  function totalQuestions(){
+    var t = 0;
+    for (var i=0;i<KXG_DATA.length;i++){ t += KXG_DATA[i].questions.length; }
+    return t;
+  }
+
+  function renderPath(){
+    var html = '<div class="kxg-path">';
+    for (var i=0;i<KXG_DATA.length;i++){
+      var stop = KXG_DATA[i];
+      var cls = 'kxg-stop';
+      if (i === state.stop) { cls += ' active'; }
+      if (i < state.stop) { cls += ' done'; }
+      var dot = (i < state.stop) ? '✓' : String(i+1);
+      html += '<div class="'+cls+'"><div class="kxg-stop-dot">'+dot+'</div><div class="kxg-stop-name">'+stop.name+'</div></div>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  function renderIntro(){
+    var best = getBest();
+    var bestHtml = '';
+    if (best !== null) {
+      bestHtml = '<div class="kxg-best">Twój najlepszy wynik: '+best+' / '+totalQuestions()+'</div>';
+    }
+    screen.innerHTML =
+      '<span class="kxg-eyebrow">Gra interaktywna</span>' +
+      '<h3>Pielgrzymka przez wieki</h3>' +
+      '<p class="kxg-lead">Odwiedź kolejno cztery miejsca naszej parafii — Grzmiącą, Mieszałki, Nosibądy i Suchą. Odpowiadaj na pytania, zdobywaj stemple w cyfrowym paszporcie pielgrzyma i poznawaj historię tych ziem.</p>' +
+      '<button class="kxg-btn kxg-btn-gold" id="kxgStart">Rozpocznij pielgrzymkę</button>' +
+      bestHtml;
+    var btn = document.getElementById('kxgStart');
+    if (btn) { btn.addEventListener('click', startGame); }
+  }
+
+  function startGame(){
+    state = { stop:0, q:0, score:0, answered:false, stamps:[] };
+    renderQuestion();
+  }
+
+  function renderQuestion(){
+    var stop = KXG_DATA[state.stop];
+    var item = stop.questions[state.q];
+    state.answered = false;
+    var optsHtml = '';
+    for (var i=0;i<item.opts.length;i++){
+      optsHtml += '<button class="kxg-option" data-i="'+i+'">'+item.opts[i]+'</button>';
+    }
+    screen.innerHTML =
+      renderPath() +
+      '<div class="kxg-qcount">'+stop.icon+' '+stop.name+' · pytanie '+(state.q+1)+' z '+stop.questions.length+'</div>' +
+      '<div class="kxg-question"><h4>'+item.q+'</h4>' +
+      '<div class="kxg-options">'+optsHtml+'</div>' +
+      '<div id="kxgFactZone"></div>' +
+      '</div>';
+    var buttons = screen.querySelectorAll('.kxg-option');
+    buttons.forEach(function(b){
+      b.addEventListener('click', function(){
+        onAnswer(parseInt(b.getAttribute('data-i'),10));
+      });
+    });
+  }
+
+  function onAnswer(i){
+    if (state.answered) { return; }
+    state.answered = true;
+    var stop = KXG_DATA[state.stop];
+    var item = stop.questions[state.q];
+    var buttons = screen.querySelectorAll('.kxg-option');
+    buttons.forEach(function(b){
+      b.setAttribute('disabled','disabled');
+      var bi = parseInt(b.getAttribute('data-i'),10);
+      if (bi === item.correct) { b.classList.add('kxg-correct'); }
+      else if (bi === i) { b.classList.add('kxg-wrong'); }
+    });
+    if (i === item.correct) { state.score += 1; }
+    var factZone = document.getElementById('kxgFactZone');
+    if (factZone) {
+      factZone.innerHTML = '<div class="kxg-fact"><strong>Czy wiedziałeś?</strong> '+item.fact+'</div>' +
+        '<div class="kxg-actions"><button class="kxg-btn" id="kxgNext">Dalej</button></div>';
+    }
+    var nextBtn = document.getElementById('kxgNext');
+    if (nextBtn) { nextBtn.addEventListener('click', advance); }
+  }
+
+  function advance(){
+    var stop = KXG_DATA[state.stop];
+    var lastQuestion = (state.q + 1 === stop.questions.length);
+    if (!lastQuestion) {
+      state.q += 1;
+      renderQuestion();
+      return;
+    }
+    state.stamps.push(stop.id);
+    var lastStop = (state.stop + 1 === KXG_DATA.length);
+    if (!lastStop) {
+      renderStampReveal();
+      return;
+    }
+    renderFinal();
+  }
+
+  function renderStampReveal(){
+    var stop = KXG_DATA[state.stop];
+    screen.innerHTML =
+      renderPath() +
+      '<div class="kxg-stampburst">' +
+      '<div class="kxg-stamp-icon">'+stop.icon+'</div>' +
+      '<h3>Zdobyto stempel: '+stop.name+'!</h3>' +
+      '<p class="kxg-lead">Wyruszasz dalej, w stronę kolejnego przystanku pielgrzymki.</p>' +
+      '<div class="kxg-actions"><button class="kxg-btn kxg-btn-gold" id="kxgGoNext">Idź dalej</button></div>' +
+      '</div>';
+    var goBtn = document.getElementById('kxgGoNext');
+    if (goBtn) {
+      goBtn.addEventListener('click', function(){
+        state.stop += 1;
+        state.q = 0;
+        renderQuestion();
+      });
+    }
+  }
+
+  function scoreTitle(score, total){
+    var ratio = score / total;
+    if (ratio >= 0.9) { return 'Kronikarz Grzmiącej'; }
+    if (ratio >= 0.65) { return 'Pielgrzym Wytrwały'; }
+    if (ratio >= 0.3) { return 'Wędrowiec'; }
+    return 'Początkujący Odkrywca';
+  }
+
+  function renderFinal(){
+    var total = totalQuestions();
+    var best = saveBest(state.score, total);
+    var title = scoreTitle(state.score, total);
+    var passportHtml = '<div class="kxg-passport">';
+    for (var i=0;i<KXG_DATA.length;i++){
+      var stop = KXG_DATA[i];
+      passportHtml += '<div class="kxg-pstamp done"><div class="kxg-pstamp-icon">'+stop.icon+'</div><div class="kxg-pstamp-name">'+stop.name+'</div></div>';
+    }
+    passportHtml += '</div>';
+    screen.innerHTML =
+      '<span class="kxg-eyebrow">Pielgrzymka ukończona</span>' +
+      '<h3>Twój paszport pielgrzyma jest pełny</h3>' +
+      passportHtml +
+      '<div class="kxg-score"><div class="kxg-score-num">'+state.score+' / '+total+'</div>' +
+      '<div class="kxg-score-title">'+title+'</div></div>' +
+      '<div class="kxg-best">Najlepszy wynik: '+best+' / '+total+'</div>' +
+      '<div class="kxg-actions"><button class="kxg-btn kxg-btn-gold" id="kxgReplay">Zagraj ponownie</button></div>';
+    var replayBtn = document.getElementById('kxgReplay');
+    if (replayBtn) { replayBtn.addEventListener('click', startGame); }
+  }
+
+  renderIntro();
+})();
+    </script>
+
+
+    <div class="kx-loc">
+        <div class="kx-loc-banner">
+            <span class="kx-loc-index">1</span>
+            <img data-opt-id=1283342644  fetchpriority="high" decoding="async" src="https://mln5jgllkez4.i.optimole.com/w:auto/h:auto/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/09/IMG_20250612_122704557.jpg" alt="Kościół w Grzmiącej"/>
+            <div class="kx-loc-banner-overlay">
+                <span class="kx-loc-badge">Kościół parafialny</span>
+                <h3>Grzmiąca</h3>
+            </div>
+        </div>
+        <div class="kx-loc-inner">
+        <div class="kx-loc-body">
+            <p>Kościół w Grzmiącej to jeden z najstarszych i najbardziej rozpoznawalnych zabytków tej miejscowości. Powstał około 1600 r. jako świątynia w stylu późnogotyckim z elementami barokowymi. Potem był przebudowywany w roku 1768, następnie w 1856 r. odrestaurowany, co nadało mu charakter mieszany stylistycznie. Jest obiektem orientowanym, tzn. prezbiterium kościoła znajduje się od strony wschodniej a wejście od zachodniej. Wnętrze jest jednonawowe zakończone trójbocznym prezbiterium. Charakterystyczna jest wieża świątyni zakończona hełmem barokowym a na szczycie krzyż z XVIII w. Budowla ma status zabytku (zabytkowy kościół wraz z otoczeniem, nr rej. 331, wpisany 9 maja 1961 r.), co oznacza, że chroni się nie tylko mury, ale też wystrój wewnętrzny. Do zabytkowych ruchomych elementów wnętrza zaliczone są m.in.: drewniany ołtarz główny wykonany w stylu ludowym z XVIII w. z ornamentami i płaskorzeźbami, ambona, drewniana chrzcielnica z przełomu XVII i XVIII w., drewniane żyrandole i obraz „Ukrzyżowanie&#8221;.</p>
+            <p>Od roku 1946 zaczęto organizować regularne duszpasterstwo dla wiernych obrządku rzymsko-katolickiego w Grzmiącej i okolicznych wsiach. Utworzono zatem parafię, która formalnie pod wezwaniem Matki Bożej Królowej Polski istnieje od 16 października 1946 r. Odpust parafialny przeżywany jest corocznie 3 maja, w dzień Matki Bożej Królowej Polski, co podkreśla rolę tego wezwania – Maryja jako patronka Polski, która jest mocno związana z tożsamością religijną wiernych.</p>
+            <div class="kx-priest-list"><strong>Proboszczowie:</strong> ks. Władysław Pogorzelski (1946–1955), ks. Mieczysław Herman (1955), ks. Stanisław Grzebalski (1955–1967), ks. Tadeusz Cyris (1967–2005), ks. Tadeusz Liman (2005–2022), ks. Mariusz Kuropatnicki (od 2022 r.)</div>
+            <p>Na ścianie zewnętrznej, za krzyżem misyjnym, umieszczony jest oryginalny pruski reper geodezyjny. Jest to zabytkowy, zazwyczaj żeliwny lub mosiężny, znak wysokościowy (punkt osnowy) ukazujący rzędną wysokościową: 102,413 m n.p.m.</p>
+            <p>Przez wieki funkcja kościoła zmieniała się wraz z historią tych ziem. Do 1945 roku pełnił rolę kościoła protestanckiego (w związku z historią regionu wiele świątyń było pierwotnie ewangelickimi). Po II wojnie światowej, gdy zmieniły się granice państw, wraz z napływem ludności katolickiej, budynek został przekazany Kościołowi katolickiemu i poświęcony ponownie 25 grudnia 1945 r.</p>
+            <p>Obszar parafii kilkukrotnie ulegał zmianom wraz z migrującą populacją ludności w regionie. Ostatnie zmiany granic parafii, związane z reorganizacją administracyjną w diecezji, nastąpiły w sierpniu 2022 r. W obecnym kształcie życie religijne toczy się wokół 4 miejsc, w których znajdują się świątynie lub kaplica: Grzmiąca, Mieszałki, Sucha i Nosibądy. Poza tymi posługą duszpasterską ksiądz proboszcz obejmuje jeszcze inne miejscowości: Godzisław, Gdaniec, Przystawy, Radusz, Równe, Sławno i Ubocze, z których wierni mają do najbliższych kościołów od 4 do 8 km. Parafia liczy około 2 380 wiernych i należy do Diecezji Koszalińsko‑Kołobrzeskiej w dekanacie Barwice.</p>
+        </div>
+        <div class="kx-loc-gallery">
+            <a href="https://parafiagrzmiaca.pl/img_20220930_184052318-2/"><img data-opt-id=1111601291  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:auto/h:auto/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/04/IMG_20220930_184052318-edited-scaled.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%%20100%%22%20width%3D%22100%%22%20height%3D%22100%%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%%22%20height%3D%22100%%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Grzmiąca"/></a>
+            <a href="https://parafiagrzmiaca.pl/historia-kosciola/img_20240927_1733566043/"><img data-opt-id=801590236  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:1024/h:728/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/04/IMG_20240927_1733566043.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201024%20728%22%20width%3D%221024%22%20height%3D%22728%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%221024%22%20height%3D%22728%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Grzmiąca"/></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="kx-timeline-connector"></div>
+    <div class="kx-loc kx-reveal">
+        <div class="kx-loc-banner">
+            <span class="kx-loc-index">2</span>
+            <img data-opt-id=1943088194  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:auto/h:auto/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/09/IMG_20240906_162134141.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%%20100%%22%20width%3D%22100%%22%20height%3D%22100%%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%%22%20height%3D%22100%%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Kościół w Mieszałkach"/>
+            <div class="kx-loc-banner-overlay">
+                <span class="kx-loc-badge">Filia</span>
+                <h3>Mieszałki</h3>
+            </div>
+        </div>
+        <div class="kx-loc-inner">
+        <div class="kx-loc-body">
+            <p>Neogotycki kościół w Mieszałkach został zbudowany w latach 1884-1885 i funkcjonował jako protestancki. Od strony wschodniej przylega pięcioboczna absyda (prezbiterium) z boczną przybudówką – zakrystią. Od zachodu – 5 kondygnacyjna wieża z dzwonnicą i po bokach trójboczne klatki schodowe. Wnętrze jest rozświetlone dużymi ostrołukowymi oknami z laskowaniem po obu stronach nawy, zaś poniżej dużo mniejszymi podwójnymi oknami tzw. biforia. Dzięki ofiarności parafian i innych darczyńców wszystkie zostały odnowione w latach 2025-2026. Na szczególną uwagę zasługuje oryginalny witraż w prezbiterium – postać Chrystusa na tle gotyckiego portalu w kolorowej bordiurze.</p>
+            <p>Po II wojnie światowej został poświęcony 19 marca 1946 r. i objęty opieką duszpasterską przez kapłanów rzymskokatolickich z pobliskiej Grzmiącej. Jako parafia pw. św. Józefa, Oblubieńca NMP została erygowana dopiero w czerwcu 1957 r., a życie religijne skupiało się jeszcze wokół głównych miejsc z kościołami w Nosibądach i Kowalkach.</p>
+            <div class="kx-priest-list"><strong>Proboszczowie:</strong> ks. Jan Głażewski, ks. Mieczysław Gruchała, ks. Julian Mizera, ks. Tadeusz Caruk, ks. Czesław Myśliwiec, ks. Franciszek Żakowski, ks. Bolesław Liss, ks. Zbigniew Waszkiewicz, ks. Henryk Mulawski, ks. Tadeusz Serafin, ks. Krzysztof Stefan, ks. Robert Gruszowski</div>
+            <p>Po zmianach administracyjnych Kościoła Koszalińsko–Kołobrzeskiego w sierpniu 2022 r., parafia w Mieszałkach została zniesiona i jej większa część przyłączona ponownie do parafii w Grzmiącej. A życie religijne dalej się rozwija. Między innymi od maja do października, każdego 13. dnia miesiąca odprawiane są tu <em>Nabożeństwa Fatimskie</em>, z procesją światła wokół kościoła, zaś doroczny odpust przeżywany jest 19 marca.</p>
+        </div>
+        <div class="kx-loc-gallery">
+            <a href="https://parafiagrzmiaca.pl/historia-kosciola/img_20250704_0948559072/"><img data-opt-id=1932106634  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:1024/h:771/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/04/IMG_20250704_0948559072.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201024%20771%22%20width%3D%221024%22%20height%3D%22771%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%221024%22%20height%3D%22771%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Mieszałki"/></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="kx-timeline-connector"></div>
+    <div class="kx-loc kx-reveal">
+        <div class="kx-loc-banner">
+            <span class="kx-loc-index">3</span>
+            <img data-opt-id=655896065  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:auto/h:auto/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/09/IMG_20241202_094822757.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%%20100%%22%20width%3D%22100%%22%20height%3D%22100%%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%%22%20height%3D%22100%%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Kościół w Nosibądach"/>
+            <div class="kx-loc-banner-overlay">
+                <span class="kx-loc-badge">Filia</span>
+                <h3>Nosibądy</h3>
+            </div>
+        </div>
+        <div class="kx-loc-inner">
+        <div class="kx-loc-body">
+            <p>Zabytkowy kościół (obiekt zabytkowy wraz otoczeniem i wystrojem wnętrza: ołtarz, ambona — nr rej. 337 z 9.05.1961), w Nosibądach pw. św. Stanisława, biskupa i męczennika jest wyjątkowy m.in. z racji połączenia kilku stylów i sposobów budowy. Najstarsza część — środkowa, wykonana głównie z kamieni polnych i pochodzi z I połowy XVI w. W 1775 r. dobudowano szachulcową, 3-kondygnacyjną wieżę z 8-bocznym hełmem. W XIX w. od strony wschodniej kościoła dobudowano w stylu neogotyckim część nawy głównej.</p>
+            <p>Kościół został poświęcony 24 marca 1946 roku a później terytorialnie należał do parafii w Krosinie. Od 1957 roku przyłączony do powstałej wówczas parafii w Mieszałkach, zaś od sierpnia 2022 roku mieszkańcy Nosibądów należą do parafii w Grzmiącej. Od 2020 roku kościół jest wyłączony z użytku ze względu na zły stan techniczny, udało się jedynie w 2024 roku wymienić więźbę i pokrycie dachu. Społeczność Nosibądów liczy około 180 osób i nie jest w tej chwili możliwe, bez uzyskania znacznych finansowych środków zewnętrznych, dokończenie remontu. Msze święte i nabożeństwa są sprawowane w pobliskiej świetlicy wiejskiej. Doroczny odpust ku czci patrona kościoła przeżywany jest 8 maja.</p>
+        </div>
+        <div class="kx-loc-gallery">
+            <a href="https://parafiagrzmiaca.pl/historia-kosciola/img_20241202_091410100/"><img data-opt-id=1987443148  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:576/h:1024/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/04/IMG_20241202_091410100.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20576%201024%22%20width%3D%22576%22%20height%3D%221024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22576%22%20height%3D%221024%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Nosibądy"/></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="kx-timeline-connector"></div>
+    <div class="kx-loc kx-reveal">
+        <div class="kx-loc-banner">
+            <span class="kx-loc-index">4</span>
+            <img data-opt-id=1657540849  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:auto/h:auto/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/09/IMG_20240903_172018148.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%%20100%%22%20width%3D%22100%%22%20height%3D%22100%%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%%22%20height%3D%22100%%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Kaplica w Suchej"/>
+            <div class="kx-loc-banner-overlay">
+                <span class="kx-loc-badge">Kaplica filialna</span>
+                <h3>Sucha</h3>
+            </div>
+        </div>
+        <div class="kx-loc-inner">
+        <div class="kx-loc-body">
+            <p>Miejscowość Sucha jest trzecią, pod względem ilości mieszkańców w Gminie Grzmiąca i należy do parafii Grzmiąca. Już u schyłku lat 70. mieszkańcy wsi podejmowali starania aby powstała kaplica, ale pojawiało się wiele przeszkód. Dopiero po „upadku&#8221; PGR-ów, społeczność zakupiła dawną remizę i zaczęto ją adaptować na kaplicę. W 1993 r. kaplica pw. Miłosierdzia Bożego została poświęcona i do dziś sprawowane są tam Msze św., głównie w sobotę (jako niedzielna) i nabożeństwa.</p>
+            <p>W II niedzielę Wielkanocy, czyli Miłosierdzia Bożego, parafianie gromadzą się o godz. 14:00 na Mszy św. odpustowej by potem od godz. 15:00 trwać na modlitwie w <em>Godzinie Miłosierdzia</em>.</p>
+            <p>Od początku funkcjonowania kaplica nie była remontowana, stąd wymaga kosztownych inwestycji, gdyż doraźne naprawy zwłaszcza dachu, nie są wystarczające. Mieszkańcy gromadzą już od kilku lat środki na ten cel.</p>
+        </div>
+        <div class="kx-loc-gallery">
+            <a href="https://parafiagrzmiaca.pl/historia-kosciola/img_20240903_1715255872/"><img data-opt-id=582332715  data-opt-src="https://mln5jgllkez4.i.optimole.com/w:1024/h:576/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/04/IMG_20240903_1715255872.jpg"  decoding="async" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201024%20576%22%20width%3D%221024%22%20height%3D%22576%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%221024%22%20height%3D%22576%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E" alt="Sucha"/></a>
+        </div>
+        </div>
+    </div>
+</div>

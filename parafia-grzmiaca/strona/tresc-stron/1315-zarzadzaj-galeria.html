@@ -1,0 +1,611 @@
+<!-- Strona 1315 | Zarządzanie galerią | https://parafiagrzmiaca.pl/zarzadzaj-galeria/ | zmieniona 2026-09-28T10:40:34 | featured_media 0 -->
+
+<style>
+.page-id-1315 .nv-post-cover{display:none!important;}
+.kx-gm{max-width:920px;margin:16px auto 70px;padding:0 20px 60px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#26313F;}
+.kx-gm-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
+.kx-gm-top a{color:#5B6B7D;text-decoration:none;font-size:13.5px;font-weight:600;}
+.kx-gm-top a:hover{color:#1E3A5F;}
+.kx-gm-hero{background:linear-gradient(135deg,#1E3A5F,#12233A);border-radius:18px;padding:30px 32px;margin-bottom:22px;box-shadow:0 10px 30px rgba(18,35,58,.25);}
+.kx-gm-hero h1{color:#F4E9D3;margin:0 0 6px;font-size:23px;}
+.kx-gm-hero p{color:#CBD8E6;margin:0;font-size:14px;}
+.kx-gm-notice{background:#FBF3E0;border:1px solid #E9D8A6;border-radius:14px;padding:15px 20px;margin-bottom:22px;font-size:13.5px;color:#6B5525;line-height:1.55;}
+.kx-gm-notice strong{color:#1E3A5F;}
+.kx-gm-card-plain{background:#FBF8F3;border:1px solid #E9E2D2;border-radius:16px;padding:32px;box-shadow:0 4px 18px rgba(30,58,95,.06);}
+.kx-gm-gate{background:#FBF8F3;border:1px solid #E9E2D2;border-radius:16px;padding:32px;text-align:center;box-shadow:0 4px 18px rgba(30,58,95,.06);}
+.kx-gm-gate p{color:#5B6B7D;margin:0 0 18px;font-size:15px;}
+.kx-gm-addevent{display:flex;gap:10px;background:#FBF8F3;border:1px solid #E9E2D2;border-radius:16px;padding:18px 20px;margin-bottom:22px;box-shadow:0 4px 18px rgba(30,58,95,.06);flex-wrap:wrap;}
+.kx-gm-addevent input{flex:1 1 220px;padding:12px 14px;border:1px solid #DED2B0;border-radius:10px;font-size:14.5px;box-sizing:border-box;background:#fff;color:#26313F;}
+.kx-gm-addevent input:focus{outline:none;border-color:#C9A24B;box-shadow:0 0 0 3px rgba(201,162,75,.18);}
+.kx-gm-addevent button{background:#1E3A5F;color:#fff;border:none;padding:12px 22px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;}
+.kx-gm-addevent button:hover{background:#12233A;}
+.kx-gm-event{background:#FBF8F3;border:1px solid #E9E2D2;border-radius:16px;margin-bottom:14px;box-shadow:0 4px 18px rgba(30,58,95,.06);overflow:hidden;}
+.kx-gm-event-head{display:flex;align-items:stretch;gap:12px;padding:16px;}
+.kx-gm-arrows{display:flex;flex-direction:column;gap:4px;flex-shrink:0;width:36px;}
+.kx-gm-arrow{background:#fff;border:1px solid #DED2B0;color:#1E3A5F;width:36px;height:36px;border-radius:8px;cursor:pointer;font-size:15px;line-height:1;padding:0;flex:1;}
+.kx-gm-arrow:hover{background:#F1ECE0;}
+.kx-gm-arrow:disabled{opacity:.3;cursor:default;}
+.kx-gm-event-main{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:10px;justify-content:center;}
+.kx-gm-event-title{font-size:17px;font-weight:700;color:#1E3A5F;cursor:pointer;padding:6px 8px;border-radius:8px;margin:-6px -8px 0;}
+.kx-gm-event-title:hover{background:#F1ECE0;}
+.kx-gm-event-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+.kx-gm-badge{background:#F1ECE0;color:#5B6B7D;font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.kx-gm-event-btns{display:flex;gap:8px;flex-shrink:0;}
+.kx-gm-icon-btn{background:#fff;border:1px solid #DED2B0;color:#1E3A5F;width:40px;height:40px;border-radius:9px;cursor:pointer;font-size:18px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.kx-gm-icon-btn:hover{background:#F1ECE0;}
+.kx-gm-del-event{background:#fff;border:1px solid #E4B7B7;color:#9B3A3A;width:40px;height:40px;border-radius:9px;cursor:pointer;font-size:18px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.kx-gm-del-event:hover{background:#FBEAEA;}
+.kx-gm-photos{display:none;padding:4px 18px 20px;border-top:1px solid #E9E2D2;}
+.kx-gm-photos.kx-open{display:block;}
+.kx-gm-desc-field{margin-top:14px;}
+.kx-gm-desc-field label{display:block;font-weight:600;color:#26313F;font-size:12.5px;margin-bottom:6px;}
+.kx-gm-desc-field textarea{width:100%;padding:10px 12px;border:1px solid #DED2B0;border-radius:10px;font-size:13.5px;box-sizing:border-box;background:#fff;color:#26313F;font-family:inherit;resize:vertical;min-height:52px;}
+.kx-gm-desc-field textarea:focus{outline:none;border-color:#C9A24B;box-shadow:0 0 0 3px rgba(201,162,75,.18);}
+.kx-gm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px;margin-top:14px;}
+.kx-gm-thumb{position:relative;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:#F1ECE0;}
+.kx-gm-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+.kx-gm-thumb-del{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:rgba(155,58,58,.9);color:#fff;border:none;font-size:13px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.kx-gm-thumb-del:hover{background:#7A2E24;}
+.kx-gm-thumb-new{position:absolute;top:4px;left:4px;background:#C9A24B;color:#12233A;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:6px;}
+.kx-gm-thumb-moves{position:absolute;bottom:0;left:0;right:0;display:flex;background:rgba(18,35,58,.72);}
+.kx-gm-thumb-moves button{flex:1;background:none;border:none;color:#fff;font-size:13px;padding:5px 0;cursor:pointer;}
+.kx-gm-thumb-moves button:hover{background:rgba(255,255,255,.18);}
+.kx-gm-thumb-moves button:disabled{opacity:.3;cursor:default;}
+.kx-gm-addphotos{aspect-ratio:1/1;border:2px dashed #DED2B0;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;color:#5B6B7D;font-size:11px;text-align:center;background:#fff;}
+.kx-gm-addphotos:hover{border-color:#C9A24B;color:#1E3A5F;}
+.kx-gm-addphotos span{font-size:22px;}
+.kx-gm-empty{color:#9AA6B2;font-size:13px;text-align:center;padding:18px 0;}
+.kx-gm-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
+.kx-gm-btn{flex:1 1 160px;text-align:center;border:none;padding:12px 18px;font-size:14px;font-weight:700;border-radius:10px;cursor:pointer;transition:.2s;text-decoration:none;display:inline-block;box-sizing:border-box;}
+.kx-gm-btn-save{background:#C9A24B;color:#1E3A5F;}
+.kx-gm-btn-save:hover{background:#b98f39;}
+.kx-gm-btn-revert{background:#F1ECE0;color:#1E3A5F;border:1px solid #DED2B0;}
+.kx-gm-btn-revert:hover{background:#E9E2D2;}
+.kx-gm-btn-exit{background:transparent;color:#9B3A3A;border:1px solid #E4B7B7;}
+.kx-gm-btn-exit:hover{background:#FBEAEA;}
+.kx-gm-msg{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;font-size:13.5px;}
+.kx-gm-msg.err{background:#FBEAEA;border:1px solid #E4B7B7;color:#9B3A3A;}
+.kx-gm-confirm{display:none;background:#EAF6EC;border:1px solid #BEE0C4;border-radius:16px;padding:24px 26px;margin-top:22px;}
+.kx-gm-confirm h3{color:#2C6B39;margin:0 0 10px;font-size:16.5px;}
+.kx-gm-confirm p{color:#2C6B39;font-size:13.5px;line-height:1.6;margin:0 0 12px;}
+.kx-gm-summary{background:#fff;border:1px solid #BEE0C4;border-radius:10px;padding:16px 18px;font-family:'Courier New',monospace;font-size:12px;line-height:1.6;color:#26313F;white-space:pre-wrap;max-height:340px;overflow-y:auto;margin-bottom:14px;}
+.kx-gm-copy-btn{background:#1E3A5F;color:#fff;border:none;padding:12px 22px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;}
+.kx-gm-copy-btn:hover{background:#12233A;}
+.kx-gm-copied{color:#2C6B39;font-size:13px;font-weight:700;margin-left:10px;display:none;}
+@media (max-width:560px){.kx-gm-actions{flex-direction:column;}.kx-gm-actions .kx-gm-btn{flex:0 0 auto;width:100%;}}
+</style>
+
+<div class="kx-gm">
+  <div class="kx-gm-top"><a href="/zarzadzanie/">&larr; Wróć do wyboru</a></div>
+
+  <div class="kx-gm-hero">
+    <h1>Zarządzanie galerią</h1>
+    <p>Dodawaj wydarzenia i zdjęcia, usuwaj i zmieniaj kolejność</p>
+  </div>
+
+  <div class="kx-gm-card-plain" id="kx-gm-step-check">
+    <p style="text-align:center;color:#5B6B7D;margin:0;">Sprawdzanie sesji&#8230;</p>
+  </div>
+
+  <div class="kx-gm-gate" id="kx-gm-step-locked" style="display:none;">
+    <p>Musisz być zalogowany, aby zarządzać galerią.</p>
+    <a class="kx-gm-btn kx-gm-btn-save" style="max-width:260px;margin:0 auto;" href="/zarzadzanie/">Przejdź do logowania</a>
+  </div>
+
+  <div id="kx-gm-step-editor" style="display:none;">
+    <div class="kx-gm-notice">
+      <strong>Jak to działa:</strong> strzałkami &#9650;&#9660; zmieniasz kolejność wydarzeń, a w środku wydarzenia strzałkami &#9664;&#9654; kolejność zdjęć. Kliknij nazwę wydarzenia, by zobaczyć i edytować jego zdjęcia. Jeśli jesteś zalogowany do panelu WordPress w tej przeglądarce, „Zatwierdź zmiany” publikuje wszystko na żywo od razu — w przeciwnym razie dostaniesz gotowe podsumowanie do przesłania administratorowi.
+    </div>
+
+    <div class="kx-gm-addevent">
+      <input type="text" id="kx-gm-new-title" placeholder="Nazwa nowego wydarzenia, np. Boże Narodzenie 2028">
+      <button type="button" id="kx-gm-add-btn">+ Dodaj wydarzenie</button>
+    </div>
+
+    <div id="kx-gm-events"></div>
+
+    <div class="kx-gm-actions">
+      <button type="button" class="kx-gm-btn kx-gm-btn-revert" id="kx-gm-revert">Cofnij zmiany</button>
+      <button type="button" class="kx-gm-btn kx-gm-btn-save" id="kx-gm-save">Zatwierdź zmiany</button>
+      <a class="kx-gm-btn kx-gm-btn-exit" href="/zarzadzanie/" id="kx-gm-exit">Wyjdź bez zapisywania</a>
+    </div>
+
+    <div class="kx-gm-msg" id="kx-gm-msg"></div>
+
+    <div class="kx-gm-confirm" id="kx-gm-confirm">
+      <h3>Zmiany przygotowane</h3>
+      <p id="kx-gm-fallback-reason" style="color:#9B3A3A;font-weight:700;display:none;"></p>
+      <p>Skopiuj poniższe podsumowanie i prześlij je administratorowi strony razem z plikami nowych zdjęć (jeśli jakieś dodałeś), aby zmiany pojawiły się na żywo w galerii.</p>
+      <div class="kx-gm-summary" id="kx-gm-summary-text"></div>
+      <button type="button" class="kx-gm-copy-btn" id="kx-gm-copy">Kopiuj podsumowanie</button>
+      <span class="kx-gm-copied" id="kx-gm-copied">Skopiowano!</span>
+    </div>
+
+    <div class="kx-gm-confirm" id="kx-gm-success">
+      <h3>&#9989; Opublikowano na żywo</h3>
+      <p id="kx-gm-success-text">Zmiany są już widoczne na stronie galerii.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var stepCheck = document.getElementById('kx-gm-step-check');
+  var stepLocked = document.getElementById('kx-gm-step-locked');
+  var stepEditor = document.getElementById('kx-gm-step-editor');
+
+  var state = { events: [] };
+  var originalState = { events: [] };
+  var openEventIds = {};
+  var newPhotoCounter = 0;
+
+  function clone(data){ return JSON.parse(JSON.stringify(data)); }
+
+  function slugify(text){
+    var map = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z','Ą':'a','Ć':'c','Ę':'e','Ł':'l','Ń':'n','Ó':'o','Ś':'s','Ź':'z','Ż':'z'};
+    var out = '';
+    for (var i=0;i<text.length;i++){
+      var ch = text[i];
+      if (map[ch]) { out += map[ch]; }
+      else { out += ch; }
+    }
+    out = out.toLowerCase();
+    out = out.replace(/[^a-z0-9]+/g, '-');
+    out = out.replace(/^-+|-+$/g, '');
+    if (!out) { out = 'event'; }
+    return 'gal-' + out;
+  }
+
+  function uniqueEventId(base, existingIds){
+    var candidate = base;
+    var n = 2;
+    while (existingIds.indexOf(candidate) !== -1) {
+      candidate = base + '-' + n;
+      n += 1;
+    }
+    return candidate;
+  }
+
+  function escapeHtml(s){
+    var d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function extractData(html){
+    var m = html.match(/var GALERIA_EVENTS = (\[[\s\S]*?\]);/);
+    if (!m) { return []; }
+    try { return JSON.parse(m[1]); } catch(e){ return []; }
+  }
+
+  function render(){
+    var wrap = document.getElementById('kx-gm-events');
+    if (state.events.length === 0) {
+      wrap.innerHTML = '<p class="kx-gm-empty">Brak wydarzeń — dodaj pierwsze powyżej.</p>';
+      return;
+    }
+    var out = '';
+    for (var i=0;i<state.events.length;i++){
+      var ev = state.events[i];
+      var isOpen = openEventIds[ev.id] ? ' kx-open' : '';
+      var upDisabled = (i === 0) ? ' disabled' : '';
+      var downDisabled = (i === state.events.length-1) ? ' disabled' : '';
+      var desc = ev.desc ? ev.desc : '';
+
+      out += '<div class="kx-gm-event" data-event-idx="'+i+'">';
+      out += '<div class="kx-gm-event-head">';
+      out += '<div class="kx-gm-arrows">';
+      out += '<button type="button" class="kx-gm-arrow" data-move-up="'+i+'"'+upDisabled+' title="Przesuń wyżej">&#9650;</button>';
+      out += '<button type="button" class="kx-gm-arrow" data-move-down="'+i+'"'+downDisabled+' title="Przesuń niżej">&#9660;</button>';
+      out += '</div>';
+      out += '<div class="kx-gm-event-main">';
+      out += '<div class="kx-gm-event-title" data-toggle-idx="'+i+'">'+escapeHtml(ev.title)+'</div>';
+      out += '<div class="kx-gm-event-footer">';
+      out += '<span class="kx-gm-badge">'+ev.photos.length+' zdj.</span>';
+      out += '<div class="kx-gm-event-btns">';
+      out += '<button type="button" class="kx-gm-icon-btn" data-rename-idx="'+i+'" title="Zmień nazwę">&#9998;</button>';
+      out += '<button type="button" class="kx-gm-icon-btn" data-toggle-idx="'+i+'" title="Rozwiń szczegóły">&#8505;</button>';
+      out += '<button type="button" class="kx-gm-del-event" data-delevent-idx="'+i+'" title="Usuń wydarzenie">&times;</button>';
+      out += '</div>';
+      out += '</div>';
+      out += '</div>';
+      out += '</div>';
+
+      out += '<div class="kx-gm-photos'+isOpen+'" data-photos-idx="'+i+'">';
+      out += '<div class="kx-gm-desc-field"><label>Opis wydarzenia (opcjonalnie, widoczny pod tytułem)</label><textarea data-desc-idx="'+i+'">'+escapeHtml(desc)+'</textarea></div>';
+      out += '<div class="kx-gm-grid" data-grid-idx="'+i+'">';
+      for (var j=0;j<ev.photos.length;j++){
+        var p = ev.photos[j];
+        var newTag = p.isNew ? '<span class="kx-gm-thumb-new">Nowe</span>' : '';
+        var leftDisabled = (j === 0) ? ' disabled' : '';
+        var rightDisabled = (j === ev.photos.length-1) ? ' disabled' : '';
+        out += '<div class="kx-gm-thumb">';
+        out += '<img decoding="async" src="'+p.src+'" alt="">';
+        out += newTag;
+        out += '<button type="button" class="kx-gm-thumb-del" data-delphoto-event="'+i+'" data-delphoto-photo="'+j+'">&times;</button>';
+        out += '<div class="kx-gm-thumb-moves">';
+        out += '<button type="button" data-photomove-event="'+i+'" data-photomove-photo="'+j+'" data-photomove-dir="left"'+leftDisabled+'>&#9664;</button>';
+        out += '<button type="button" data-photomove-event="'+i+'" data-photomove-photo="'+j+'" data-photomove-dir="right"'+rightDisabled+'>&#9654;</button>';
+        out += '</div>';
+        out += '</div>';
+      }
+      out += '<label class="kx-gm-addphotos"><span>+</span>Dodaj<input type="file" accept="image/*" multiple style="display:none" data-upload-idx="'+i+'"></label>';
+      out += '</div></div></div>';
+    }
+    wrap.innerHTML = out;
+    attachEventHandlers();
+  }
+
+  function attachEventHandlers(){
+    var wrap = document.getElementById('kx-gm-events');
+
+    wrap.querySelectorAll('[data-toggle-idx]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var idx = parseInt(el.getAttribute('data-toggle-idx'),10);
+        var id = state.events[idx].id;
+        openEventIds[id] = !openEventIds[id];
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-rename-idx]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var idx = parseInt(btn.getAttribute('data-rename-idx'),10);
+        var current = state.events[idx].title;
+        var next = window.prompt('Nowa nazwa wydarzenia:', current);
+        if (next === null) { return; }
+        var trimmed = next.trim();
+        if (!trimmed) { return; }
+        state.events[idx].title = trimmed;
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-move-up]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var idx = parseInt(btn.getAttribute('data-move-up'),10);
+        if (idx === 0) { return; }
+        var tmp = state.events[idx-1];
+        state.events[idx-1] = state.events[idx];
+        state.events[idx] = tmp;
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-move-down]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var idx = parseInt(btn.getAttribute('data-move-down'),10);
+        if (idx === state.events.length-1) { return; }
+        var tmp = state.events[idx+1];
+        state.events[idx+1] = state.events[idx];
+        state.events[idx] = tmp;
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-delevent-idx]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var idx = parseInt(btn.getAttribute('data-delevent-idx'),10);
+        var ev = state.events[idx];
+        var ok = window.confirm('Usunąć wydarzenie "'+ev.title+'" wraz ze wszystkimi jego zdjęciami?');
+        if (!ok) { return; }
+        state.events.splice(idx,1);
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-desc-idx]').forEach(function(ta){
+      ta.addEventListener('input', function(){
+        var idx = parseInt(ta.getAttribute('data-desc-idx'),10);
+        state.events[idx].desc = ta.value;
+      });
+    });
+
+    wrap.querySelectorAll('[data-delphoto-event]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var ei = parseInt(btn.getAttribute('data-delphoto-event'),10);
+        var pi = parseInt(btn.getAttribute('data-delphoto-photo'),10);
+        state.events[ei].photos.splice(pi,1);
+        openEventIds[state.events[ei].id] = true;
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-photomove-event]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if (btn.disabled) { return; }
+        var ei = parseInt(btn.getAttribute('data-photomove-event'),10);
+        var pi = parseInt(btn.getAttribute('data-photomove-photo'),10);
+        var dir = btn.getAttribute('data-photomove-dir');
+        var arr = state.events[ei].photos;
+        var target = dir === 'left' ? pi-1 : pi+1;
+        if (target < 0) { return; }
+        if (target >= arr.length) { return; }
+        var tmp = arr[target];
+        arr[target] = arr[pi];
+        arr[pi] = tmp;
+        openEventIds[state.events[ei].id] = true;
+        render();
+      });
+    });
+
+    wrap.querySelectorAll('[data-upload-idx]').forEach(function(inp){
+      inp.addEventListener('change', function(){
+        var idx = parseInt(inp.getAttribute('data-upload-idx'),10);
+        var files = inp.files;
+        for (var k=0;k<files.length;k++){
+          var file = files[k];
+          var previewUrl = URL.createObjectURL(file);
+          newPhotoCounter += 1;
+          state.events[idx].photos.push({ isNew:true, fileName:file.name, src:previewUrl, link:previewUrl, tempId:'new-'+newPhotoCounter });
+        }
+        openEventIds[state.events[idx].id] = true;
+        render();
+      });
+    });
+  }
+
+  document.getElementById('kx-gm-add-btn').addEventListener('click', function(){
+    var input = document.getElementById('kx-gm-new-title');
+    var title = input.value.trim();
+    if (!title) { return; }
+    var existingIds = state.events.map(function(ev){ return ev.id; });
+    var id = uniqueEventId(slugify(title), existingIds);
+    state.events.unshift({ id:id, title:title, desc:'', photos:[] });
+    openEventIds[id] = true;
+    input.value = '';
+    render();
+    var newCard = document.querySelector('.kx-gm-event[data-event-idx="0"]');
+    if (newCard) { newCard.scrollIntoView({behavior:'smooth', block:'center'}); }
+  });
+
+  function showMsg(text, cls){
+    var msg = document.getElementById('kx-gm-msg');
+    msg.className = 'kx-gm-msg ' + cls;
+    msg.textContent = text;
+    msg.style.display = 'block';
+  }
+
+  document.getElementById('kx-gm-revert').addEventListener('click', function(){
+    state = clone(originalState);
+    openEventIds = {};
+    render();
+    document.getElementById('kx-gm-msg').style.display = 'none';
+    document.getElementById('kx-gm-confirm').style.display = 'none';
+  });
+
+  function buildSummary(){
+    var lines = [];
+    lines.push('ZMIANY W GALERII');
+    lines.push('');
+    lines.push('Kolejność wydarzeń:');
+    for (var i=0;i<state.events.length;i++){
+      lines.push('  ' + (i+1) + '. ' + state.events[i].title);
+    }
+    lines.push('');
+
+    var origIds = originalState.events.map(function(ev){ return ev.id; });
+    var newIds = state.events.map(function(ev){ return ev.id; });
+    var removedEvents = originalState.events.filter(function(ev){ return newIds.indexOf(ev.id) === -1; });
+    if (removedEvents.length > 0) {
+      lines.push('Usunięte wydarzenia:');
+      removedEvents.forEach(function(ev){ lines.push('  - ' + ev.title); });
+      lines.push('');
+    }
+
+    for (var j=0;j<state.events.length;j++){
+      var ev = state.events[j];
+      var isNewEvent = origIds.indexOf(ev.id) === -1;
+      var origEvent = null;
+      for (var k=0;k<originalState.events.length;k++){
+        if (originalState.events[k].id === ev.id) { origEvent = originalState.events[k]; }
+      }
+
+      lines.push((isNewEvent ? ev.title + ' (NOWE WYDARZENIE)' : ev.title) + ':');
+
+      if (isNewEvent) {
+        if (ev.desc) { lines.push('  Opis: ' + ev.desc); }
+      } else if (origEvent) {
+        if (ev.desc !== origEvent.desc) { lines.push('  Nowy opis: ' + (ev.desc ? ev.desc : '(usunięto opis)')); }
+      }
+
+      var newPhotos = ev.photos.filter(function(p){ return p.isNew; });
+      var keptPhotos = ev.photos.filter(function(p){ return !p.isNew; });
+
+      if (keptPhotos.length > 0) {
+        lines.push('  Kolejność istniejących zdjęć (ID): ' + keptPhotos.map(function(p){ return p.id; }).join(', '));
+      }
+
+      if (origEvent) {
+        var keptIds = keptPhotos.map(function(p){ return p.id; });
+        var removedPhotos = origEvent.photos.filter(function(p){ return keptIds.indexOf(p.id) === -1; });
+        if (removedPhotos.length > 0) {
+          lines.push('  Usuń zdjęcia (ID): ' + removedPhotos.map(function(p){ return p.id; }).join(', '));
+        }
+      }
+
+      if (newPhotos.length > 0) {
+        lines.push('  Dodaj nowe zdjęcia (prześlij pliki w wiadomości): ' + newPhotos.map(function(p){ return p.fileName; }).join(', '));
+      }
+      lines.push('');
+    }
+
+    return lines.join('\n');
+  }
+
+  function getWpNonce(){
+    return fetch('/wp-admin/', { credentials: 'same-origin' }).then(function(r){
+      return r.text().then(function(html){
+        var m = html.match(/"nonce":"([a-f0-9]+)"/);
+        if (m) { return { nonce: m[1], reason: null }; }
+        return { nonce: null, reason: 'Nie wykryto aktywnej sesji WordPress w tej przeglądarce — nie jesteś zalogowany do wp-admin na tym urządzeniu.' };
+      });
+    }).catch(function(){
+      return { nonce: null, reason: 'Nie udało się połączyć z panelem WordPress, aby sprawdzić sesję.' };
+    });
+  }
+
+  function uploadPhotoLive(photo, nonce){
+    var fd = new FormData();
+    fd.append('file', photo.file, photo.fileName);
+    return fetch('/wp-json/wp/v2/media', {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: { 'X-WP-Nonce': nonce },
+      body: fd
+    }).then(function(r){
+      if (!r.ok) { throw new Error('upload failed'); }
+      return r.json();
+    }).then(function(media){
+      return { id: media.id, src: media.source_url, link: media.link };
+    });
+  }
+
+  function publishLive(nonce){
+    var uploadTasks = [];
+    state.events.forEach(function(ev){
+      ev.photos.forEach(function(p){
+        if (p.isNew) {
+          uploadTasks.push(uploadPhotoLive(p, nonce).then(function(result){
+            p.id = result.id;
+            p.src = result.src;
+            p.link = result.link;
+            p.isNew = false;
+          }));
+        }
+      });
+    });
+
+    return Promise.all(uploadTasks).then(function(){
+      return fetch('/wp-json/wp/v2/pages/640?context=edit', {
+        credentials: 'same-origin',
+        headers: { 'X-WP-Nonce': nonce }
+      });
+    }).then(function(r){
+      if (!r.ok) { throw new Error('fetch page failed'); }
+      return r.json();
+    }).then(function(page){
+      var content = page.content.raw;
+      var finalEvents = [];
+      state.events.forEach(function(ev){
+        var photos = [];
+        ev.photos.forEach(function(p){
+          photos.push({ id: p.id, src: p.src, link: p.link });
+        });
+        finalEvents.push({ id: ev.id, title: ev.title, desc: ev.desc ? ev.desc : '', photos: photos });
+      });
+      var newArrayLiteral = 'var GALERIA_EVENTS = ' + JSON.stringify(finalEvents) + ';';
+      var newContent = content.replace(/var GALERIA_EVENTS = \[[\s\S]*?\];/, newArrayLiteral);
+      return fetch('/wp-json/wp/v2/pages/640', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'X-WP-Nonce': nonce, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content: newContent })
+      });
+    }).then(function(r){
+      if (!r.ok) { throw new Error('save failed'); }
+      return fetch('/wp-json/wp-super-cache/v1/cache', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'X-WP-Nonce': nonce, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ delete_cache: true })
+      }).catch(function(){ return null; });
+    });
+  }
+
+  function showSummaryFallback(reason){
+    var reasonEl = document.getElementById('kx-gm-fallback-reason');
+    if (reason) {
+      reasonEl.textContent = reason;
+      reasonEl.style.display = 'block';
+    } else {
+      reasonEl.style.display = 'none';
+    }
+    var summaryEl = document.getElementById('kx-gm-summary-text');
+    summaryEl.textContent = buildSummary();
+    document.getElementById('kx-gm-confirm').style.display = 'block';
+    document.getElementById('kx-gm-confirm').scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  document.getElementById('kx-gm-save').addEventListener('click', function(){
+    document.getElementById('kx-gm-msg').style.display = 'none';
+    document.getElementById('kx-gm-confirm').style.display = 'none';
+    document.getElementById('kx-gm-success').style.display = 'none';
+    for (var i=0;i<state.events.length;i++){
+      if (!state.events[i].title.trim()) {
+        showMsg('Każde wydarzenie musi mieć nazwę.', 'err');
+        return;
+      }
+    }
+
+    var saveBtn = document.getElementById('kx-gm-save');
+    saveBtn.disabled = true;
+    saveBtn.textContent = 'Sprawdzanie sesji...';
+
+    getWpNonce().then(function(result){
+      if (!result.nonce) {
+        saveBtn.disabled = false;
+        saveBtn.textContent = 'Zatwierdź zmiany';
+        showSummaryFallback(result.reason);
+        return;
+      }
+      saveBtn.textContent = 'Publikowanie...';
+      publishLive(result.nonce).then(function(){
+        saveBtn.disabled = false;
+        saveBtn.textContent = 'Zatwierdź zmiany';
+        originalState = clone(state);
+        var successBox = document.getElementById('kx-gm-success');
+        successBox.style.display = 'block';
+        successBox.scrollIntoView({behavior:'smooth', block:'nearest'});
+      }).catch(function(err){
+        saveBtn.disabled = false;
+        saveBtn.textContent = 'Zatwierdź zmiany';
+        var msg = (err ? err.message : '') ? err.message : 'nieznany błąd';
+        showSummaryFallback('Wykryto sesję, ale publikacja nie powiodła się (' + msg + '). Poniżej podsumowanie zapasowe do wysłania administratorowi.');
+      });
+    });
+  });
+
+  document.getElementById('kx-gm-copy').addEventListener('click', function(){
+    var text = document.getElementById('kx-gm-summary-text').textContent;
+    var copiedEl = document.getElementById('kx-gm-copied');
+    function flashCopied(){
+      copiedEl.style.display = 'inline';
+      setTimeout(function(){ copiedEl.style.display = 'none'; }, 2200);
+    }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(flashCopied).catch(function(){
+        showMsg('Nie udało się skopiować automatycznie — zaznacz tekst ręcznie.', 'err');
+      });
+      return;
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); flashCopied(); } catch(e){
+      showMsg('Nie udało się skopiować automatycznie — zaznacz tekst ręcznie.', 'err');
+    }
+    document.body.removeChild(ta);
+  });
+
+  fetch('/panel/', { credentials: 'include' }).then(function(r){ return r.text(); }).then(function(text){
+    stepCheck.style.display = 'none';
+    if (text.indexOf('Wyloguj') === -1) {
+      stepLocked.style.display = 'block';
+      return;
+    }
+    return fetch('/galeria/').then(function(r2){ return r2.text(); }).then(function(html){
+      var events = extractData(html);
+      state.events = events;
+      originalState = clone(state);
+      stepEditor.style.display = 'block';
+      render();
+    });
+  }).catch(function(){
+    stepCheck.style.display = 'none';
+    stepLocked.style.display = 'block';
+  });
+})();
+</script>
+

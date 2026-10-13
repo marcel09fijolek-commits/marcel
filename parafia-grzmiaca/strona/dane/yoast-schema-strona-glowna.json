@@ -1,0 +1,102 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://parafiagrzmiaca.pl/",
+   "url": "https://parafiagrzmiaca.pl/",
+   "name": "Aktualności - Parafia Grzmiąca",
+   "isPartOf": {
+    "@id": "https://parafiagrzmiaca.pl/#website"
+   },
+   "about": {
+    "@id": "https://parafiagrzmiaca.pl/#organization"
+   },
+   "primaryImageOfPage": {
+    "@id": "https://parafiagrzmiaca.pl/#primaryimage"
+   },
+   "image": {
+    "@id": "https://parafiagrzmiaca.pl/#primaryimage"
+   },
+   "thumbnailUrl": "https://mln5jgllkez4.i.optimole.com/w:1920/h:1080/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/05/IMG_20251224_10171667131-scaled.jpg",
+   "datePublished": "2026-09-03T20:04:44+00:00",
+   "dateModified": "2026-09-27T08:09:10+00:00",
+   "breadcrumb": {
+    "@id": "https://parafiagrzmiaca.pl/#breadcrumb"
+   },
+   "inLanguage": "pl-PL",
+   "potentialAction": [
+    {
+     "@type": "ReadAction",
+     "target": [
+      "https://parafiagrzmiaca.pl/"
+     ]
+    }
+   ]
+  },
+  {
+   "@type": "ImageObject",
+   "inLanguage": "pl-PL",
+   "@id": "https://parafiagrzmiaca.pl/#primaryimage",
+   "url": "https://mln5jgllkez4.i.optimole.com/w:1920/h:1080/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/05/IMG_20251224_10171667131-scaled.jpg",
+   "contentUrl": "https://mln5jgllkez4.i.optimole.com/w:1920/h:1080/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/05/IMG_20251224_10171667131-scaled.jpg",
+   "width": 2560,
+   "height": 1441
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://parafiagrzmiaca.pl/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Strona główna"
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://parafiagrzmiaca.pl/#website",
+   "url": "https://parafiagrzmiaca.pl/",
+   "name": "Parafia pw. Matki Bożej Królowej Polski w Grzmiącej",
+   "description": "Kościół parafialny w Grzmiącej",
+   "publisher": {
+    "@id": "https://parafiagrzmiaca.pl/#organization"
+   },
+   "potentialAction": [
+    {
+     "@type": "SearchAction",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://parafiagrzmiaca.pl/?s={search_term_string}"
+     },
+     "query-input": {
+      "@type": "PropertyValueSpecification",
+      "valueRequired": true,
+      "valueName": "search_term_string"
+     }
+    }
+   ],
+   "inLanguage": "pl-PL"
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://parafiagrzmiaca.pl/#organization",
+   "name": "Parafia pw. Matki Bożej Królowej Polski w Grzmiącej",
+   "url": "https://parafiagrzmiaca.pl/",
+   "logo": {
+    "@type": "ImageObject",
+    "inLanguage": "pl-PL",
+    "@id": "https://parafiagrzmiaca.pl/#/schema/logo/image/",
+    "url": "https://mln5jgllkez4.i.optimole.com/cb:OYx-.4d5/w:1024/h:1024/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/09/logo-parafia-grzmiaca.png",
+    "contentUrl": "https://mln5jgllkez4.i.optimole.com/cb:OYx-.4d5/w:1024/h:1024/q:mauto/f:best/https://parafiagrzmiaca.pl/wp-content/uploads/2026/09/logo-parafia-grzmiaca.png",
+    "width": 1024,
+    "height": 1024,
+    "caption": "Parafia pw. Matki Bożej Królowej Polski w Grzmiącej"
+   },
+   "image": {
+    "@id": "https://parafiagrzmiaca.pl/#/schema/logo/image/"
+   }
+  }
+ ]
+}

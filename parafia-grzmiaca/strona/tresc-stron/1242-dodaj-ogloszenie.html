@@ -1,0 +1,247 @@
+<!-- Strona 1242 | Dodaj ogłoszenie | https://parafiagrzmiaca.pl/dodaj-ogloszenie/ | zmieniona 2026-09-27T13:13:16 | featured_media 0 -->
+
+<style>
+.page-id-1242 .nv-post-cover{display:none!important;}
+.kx-og{max-width:820px;margin:16px auto 60px;padding:0 20px 60px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;}
+.kx-og-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
+.kx-og-top a{color:#5B6B7D;text-decoration:none;font-size:13.5px;font-weight:600;}
+.kx-og-top a:hover{color:#1E3A5F;}
+.kx-og-hero{background:linear-gradient(135deg,#1E3A5F,#12233A);border-radius:18px;padding:30px 32px;margin-bottom:26px;box-shadow:0 10px 30px rgba(18,35,58,.25);}
+.kx-og-hero h1{color:#F4E9D3;margin:0 0 6px;font-size:23px;}
+.kx-og-hero p{color:#CBD8E6;margin:0;font-size:14px;}
+.kx-og-card{background:#FBF8F3;border:1px solid #E9E2D2;border-radius:16px;padding:28px;box-shadow:0 4px 18px rgba(30,58,95,.06);margin-bottom:26px;}
+.kx-og-card h2{color:#1E3A5F;margin:0 0 18px;font-size:18px;}
+.kx-og-field{margin-bottom:18px;}
+.kx-og-field label{display:block;font-weight:600;color:#26313F;font-size:13.5px;margin-bottom:6px;}
+.kx-og-field input[type=text]{width:100%;padding:13px 14px;border:1px solid #DED2B0;border-radius:10px;font-size:15.5px;box-sizing:border-box;background:#fff;color:#26313F;}
+.kx-og-field input[type=text]:focus{outline:none;border-color:#C9A24B;box-shadow:0 0 0 3px rgba(201,162,75,.18);}
+.kx-og-tools{display:flex;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
+.kx-og-tpl-btn{background:#F1ECE0;border:1px solid #DED2B0;color:#1E3A5F;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;}
+.kx-og-tpl-btn:hover{background:#E9E2D2;}
+.kx-og-upload{border:2px dashed #DED2B0;padding:18px;text-align:center;border-radius:10px;background:#fff;}
+.kx-og-upload input{width:100%;}
+.kx-og-preview{max-width:220px;max-height:150px;border-radius:8px;margin-top:10px;display:none;}
+.kx-og-submit{width:100%;background:#C9A24B;color:#1E3A5F;border:none;padding:15px;font-size:16px;font-weight:700;border-radius:10px;cursor:pointer;margin-top:6px;}
+.kx-og-submit:hover{background:#b98f39;}
+.kx-og-submit:disabled{opacity:.6;cursor:default;}
+.kx-og-msg{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;font-size:14px;}
+.kx-og-msg.ok{background:#EAF6EC;border:1px solid #BEE0C4;color:#2C6B39;}
+.kx-og-msg.err{background:#FBEAEA;border:1px solid #E4B7B7;color:#9B3A3A;}
+.kx-og-list h2{color:#1E3A5F;font-size:18px;margin:0 0 16px;}
+.kx-og-karta{display:flex;gap:18px;background:#fff;border:1px solid #E9E2D2;border-radius:12px;padding:18px;margin-bottom:14px;align-items:flex-start;}
+.kx-og-img{width:130px;height:90px;object-fit:cover;border-radius:8px;background:#F1ECE0;flex-shrink:0;}
+.kx-og-noimg{width:130px;height:90px;border-radius:8px;background:#F1ECE0;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#9AA6B2;text-align:center;}
+.kx-og-body{flex-grow:1;min-width:0;}
+.kx-og-body h4{margin:0 0 8px;color:#1E3A5F;font-size:16.5px;border-bottom:2px solid #E9E2D2;padding-bottom:8px;}
+.kx-og-body .kx-og-txt{color:#444;font-size:14px;line-height:1.55;max-height:80px;overflow:hidden;}
+.kx-og-body small{color:#9AA6B2;display:block;margin-top:8px;font-size:12px;}
+.kx-og-del{background:#dc3545;color:#fff;text-decoration:none;padding:7px 13px;border-radius:7px;font-size:12.5px;font-weight:700;flex-shrink:0;white-space:nowrap;}
+.kx-og-empty{color:#5B6B7D;font-size:14px;}
+@media (max-width:560px){.kx-og-karta{flex-direction:column;}.kx-og-img,.kx-og-noimg{width:100%;height:160px;}}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.2/tinymce.min.js"></script>
+
+<div class="kx-og">
+  <div class="kx-og-top">
+    <a href="/zarzadzanie/">&larr; Wróć do wyboru</a>
+  </div>
+
+  <div class="kx-og-hero">
+    <h1>Dodaj ogłoszenie</h1>
+    <p>Panel ogłoszeń parafialnych</p>
+  </div>
+
+  <div class="kx-og-card">
+    <h2>Nowe ogłoszenie</h2>
+    <div class="kx-og-tools">
+      <button type="button" class="kx-og-tpl-btn" id="kx-og-tpl-btn">&#128221; Wstaw szablon niedzielny</button>
+    </div>
+    <form id="kx-og-form">
+      <div class="kx-og-field">
+        <label>Tytuł ogłoszenia</label>
+        <input type="text" name="tytul" id="kx-og-tytul" placeholder="np. 23. Niedziela zwykła" required>
+      </div>
+      <div class="kx-og-field">
+        <label>Treść ogłoszenia</label>
+        <textarea name="tresc" id="kx-og-tresc"></textarea>
+      </div>
+      <div class="kx-og-field">
+        <label>Zdjęcie (opcjonalnie)</label>
+        <div class="kx-og-upload">
+          <input type="file" name="zdjecie" id="kx-og-zdjecie" accept="image/*">
+          <img class="kx-og-preview" id="kx-og-preview">
+        </div>
+      </div>
+      <button type="submit" class="kx-og-submit" id="kx-og-submit">Opublikuj ogłoszenie</button>
+      <div class="kx-og-msg" id="kx-og-msg"></div>
+    </form>
+  </div>
+
+  <div class="kx-og-card kx-og-list">
+    <h2>Opublikowane ogłoszenia</h2>
+    <div id="kx-og-listwrap"><p class="kx-og-empty">Wczytywanie&#8230;</p></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var TPL = "OGŁOSZENIA DUSZPASTERSKIE\n\n" +
+    "1. W tym tygodniu:\n- \n\n" +
+    "2. \n\n" +
+    "3. \n\n" +
+    "Wszystkim Solenizantom i Jubilatom, Parafianom i Gościom składam życzenia Bożego błogosławieństwa.\n\n" +
+    "ks. Mariusz Kuropatnicki, proboszcz";
+
+  var editor = null;
+  tinymce.init({
+    selector: '#kx-og-tresc',
+    plugins: 'lists link paste',
+    toolbar: 'undo redo | bold italic underline | bullist numlist | removeformat | link',
+    menubar: false,
+    language: 'pl',
+    height: 300,
+    branding: false,
+    promotion: false,
+    entity_encoding: 'raw',
+    paste_as_text: false,
+    paste_data_images: false,
+    valid_elements: 'p,br,strong/b,em/i,u,ul,ol,li,a[href|target],span[style],div',
+    valid_styles: { '*': 'color,font-size,text-align' },
+    setup: function(ed){
+      editor = ed;
+      ed.on('PastePostProcess', function(e){
+        e.node.innerHTML = e.node.innerHTML.replace(/style="[^"]*"/g, '');
+      });
+    }
+  });
+
+  document.getElementById('kx-og-tpl-btn').addEventListener('click', function(){
+    if(editor){ editor.setContent(TPL.split('\n').map(function(l){return l ? '<p>'+l+'</p>' : '<p>&nbsp;</p>';}).join('')); }
+  });
+
+  document.getElementById('kx-og-zdjecie').addEventListener('change', function(e){
+    var f = e.target.files[0];
+    var prev = document.getElementById('kx-og-preview');
+    if(f){
+      prev.src = URL.createObjectURL(f);
+      prev.style.display = 'block';
+    } else {
+      prev.style.display = 'none';
+    }
+  });
+
+  function escapeHtml(s){
+    var d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function extractDelId(href){
+    var m = href.match(/del=([0-9]+)/);
+    return m ? m[1] : '';
+  }
+
+  function loadList(){
+    var wrap = document.getElementById('kx-og-listwrap');
+    fetch('/ogloszenia/', { credentials: 'include' }).then(function(r){ return r.text(); }).then(function(html){
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var karty = doc.querySelectorAll('.ogloszenie-karta');
+      if(!karty.length){
+        wrap.innerHTML = '<p class="kx-og-empty">Brak opublikowanych ogłoszeń lub sesja wygasła &mdash; <a href="/zarzadzanie/">zaloguj się ponownie</a>.</p>';
+        return;
+      }
+      var out = '';
+      karty.forEach(function(k){
+        var img = k.querySelector('.ogloszenie-img');
+        var h4 = k.querySelector('h4');
+        var tekst = k.querySelector('.tekst-podglad');
+        var small = k.querySelector('small');
+        var del = k.querySelector('a[href*="del="]');
+        var delId = del ? extractDelId(del.getAttribute('href')) : '';
+        var imgHtml = '<div class="kx-og-noimg">Brak zdjęcia</div>';
+        if(img && img.tagName === 'IMG' && img.src){
+          imgHtml = '<img decoding="async" class="kx-og-img" src="' + img.src + '">';
+        }
+        out += '<div class="kx-og-karta">' + imgHtml +
+          '<div class="kx-og-body"><h4>' + (h4 ? h4.innerHTML : '') + '</h4>' +
+          '<div class="kx-og-txt">' + (tekst ? tekst.innerHTML : '') + '</div>' +
+          (small ? '<small>' + small.innerHTML + '</small>' : '') +
+          '</div>' +
+          (delId ? '<button type="button" class="kx-og-del" data-del-id="' + delId + '">Usuń</button>' : '') +
+          '</div>';
+      });
+      wrap.innerHTML = out;
+      wrap.querySelectorAll('.kx-og-del').forEach(function(btn){
+        btn.addEventListener('click', function(){
+          var id = btn.getAttribute('data-del-id');
+          var ok = window.confirm('Na pewno usunąć?');
+          if (!ok) { return; }
+          btn.disabled = true;
+          btn.textContent = '...';
+          fetch('/ogloszenia/?del=' + id, { credentials: 'include' }).then(function(){
+            loadList();
+          }).catch(function(){
+            btn.disabled = false;
+            btn.textContent = 'Usuń';
+            alert('Nie udało się usunąć. Spróbuj ponownie.');
+          });
+        });
+      });
+    }).catch(function(){
+      wrap.innerHTML = '<p class="kx-og-empty">Nie udało się wczytać listy. Odśwież stronę.</p>';
+    });
+  }
+
+  document.getElementById('kx-og-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = document.getElementById('kx-og-submit');
+    var msg = document.getElementById('kx-og-msg');
+    var tytul = document.getElementById('kx-og-tytul').value;
+    var tresc = editor ? editor.getContent() : '';
+    var plik = document.getElementById('kx-og-zdjecie').files[0];
+
+    if(!tytul){ return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Publikowanie...';
+    msg.style.display = 'none';
+
+    var fd = new FormData();
+    fd.append('tytul', tytul);
+    fd.append('tresc', tresc);
+    if(plik){ fd.append('zdjecie', plik); }
+    fd.append('dodaj', '1');
+
+    fetch('/ogloszenia/', { method: 'POST', credentials: 'include', body: fd }).then(function(r){ return r.text(); }).then(function(html){
+      if(html.indexOf('Wyloguj') === -1){
+        msg.className = 'kx-og-msg err';
+        msg.textContent = 'Sesja wygasła. Zaloguj się ponownie przez /zarzadzanie/.';
+        msg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Opublikuj ogłoszenie';
+        return;
+      }
+      msg.className = 'kx-og-msg ok';
+      msg.textContent = 'Ogłoszenie opublikowane.';
+      msg.style.display = 'block';
+      document.getElementById('kx-og-tytul').value = '';
+      if(editor){ editor.setContent(''); }
+      document.getElementById('kx-og-zdjecie').value = '';
+      document.getElementById('kx-og-preview').style.display = 'none';
+      btn.disabled = false;
+      btn.textContent = 'Opublikuj ogłoszenie';
+      loadList();
+    }).catch(function(){
+      msg.className = 'kx-og-msg err';
+      msg.textContent = 'Błąd połączenia. Spróbuj ponownie.';
+      msg.style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Opublikuj ogłoszenie';
+    });
+  });
+
+  loadList();
+})();
+</script>
+

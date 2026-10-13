@@ -1,0 +1,102 @@
+<!-- Widget block-43 (sidebar footer) - kopia z żywej strony -->
+<div id="block-43" class="widget widget_block widget_custom_html">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+
+h1,h2,.kx-hero h1,.kx-zp-hero h1,.kx-og-hero h1,.kx-ms-hero h1{font-family:'Playfair Display',Georgia,'Times New Roman',serif!important;font-weight:700!important;letter-spacing:.2px!important}
+
+.nv-post-cover{position:relative!important}
+.nv-post-cover::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(18,35,58,.58),rgba(30,58,95,.32));pointer-events:none}
+
+.kx-reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+
+.header-menu-sidebar-inner{padding:4px 0!important}
+.header-menu-sidebar .navbar-toggle-wrapper{padding:6px 10px!important}
+.header-menu-sidebar-bg{justify-content:flex-start!important}
+.header-menu-sidebar .nav-ul>li:first-child>.wrap>a{padding-top:4px!important}
+.kx-reveal.kx-in{opacity:1!important;transform:translateY(0)!important}
+</style>
+<script>
+(function(){
+  function boot(){
+    if(!('IntersectionObserver' in window)){
+      document.querySelectorAll('.kx-reveal').forEach(function(el){ el.classList.add('kx-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('kx-in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.kx-reveal:not(.kx-in)').forEach(function(el){ io.observe(el); });
+    window.__kxIO = io;
+  }
+  window.kxObserveReveal = function(){
+    if(window.__kxIO){
+      document.querySelectorAll('.kx-reveal:not(.kx-in)').forEach(function(el){ window.__kxIO.observe(el); });
+    }
+  };
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', boot); } else { boot(); }
+})();
+</script>
+
+
+
+<style>.header-main{--bgcolor:#FBF8F3!important;--rowbwidth:0px!important;border-bottom:3px solid #C9A24B!important}
+.header-top{--bgcolor:#FBF8F3!important}
+.header-bottom{--bgcolor:#FBF8F3!important}
+.builder-item--primary-menu{--color:#1E3A5F!important;--hovercolor:#C9A24B!important;--hovertextcolor:#C9A24B!important;--activecolor:#C9A24B!important}
+.builder-item--primary-menu .wrap{font-weight:600!important;letter-spacing:.4px!important}
+.builder-item--nav-icon{--color:#1E3A5F!important}
+.builder-item--header_search_responsive{--color:#1E3A5F!important}
+.site-title,.site-title a,.builder-item--logo a{color:#1E3A5F!important}
+
+.sub-menu{background:#ffffff!important;border-radius:14px!important;box-shadow:0 14px 32px rgba(30,58,95,.16)!important;border-top:3px solid #C9A24B!important;padding:6px!important;overflow:hidden}
+.sub-menu li{border-radius:8px}
+.sub-menu li>.wrap{padding:10px 18px!important;border-radius:8px!important;transition:background .2s ease}
+.sub-menu li>.wrap:hover{background:#F4E9D3!important}
+.sub-menu a{color:#1E3A5F!important;font-weight:500!important}
+.sub-menu a:hover{color:#12233A!important}
+.sub-menu .wrap::after{display:none!important}
+
+.footer-top{--bgcolor:#FBF8F3!important}
+.footer-main{--bgcolor:#2B2420!important;--color:#F4E9D3!important}
+.footer-bottom{--bgcolor:#2B2420!important;--color:#B9AA95!important}
+.footer--row-inner{border-top:0!important;border-bottom:0!important}
+.footer-main .footer--row-inner{padding:34px 0 0!important}
+.footer-bottom .footer--row-inner{padding:0 0 14px!important}
+
+.kx-ft-col{max-width:340px}
+.kx-ft-h{margin:0 0 12px;font-size:11.5px;text-transform:uppercase;letter-spacing:1.8px;color:#C9A24B!important;font-weight:700}
+.kx-ft-line{margin:0 0 9px!important;font-size:14.5px!important;color:#F4E9D3!important;line-height:1.6!important;display:flex;align-items:flex-start;gap:8px}
+.kx-ft-line:last-child{margin-bottom:0!important}
+.kx-ft-ic{flex-shrink:0;opacity:.9}
+.kx-ft-col a{color:#F4E9D3!important;text-decoration:none!important;border-bottom:1px solid rgba(244,233,211,.3);transition:color .2s,border-color .2s}
+.kx-ft-col a:hover{color:#C9A24B!important;border-color:#C9A24B}
+
+.builder-item--footer-three-widgets p{margin:0!important;font-size:11.5px!important;opacity:.65!important;line-height:1.5!important}
+.footer-bottom .hfg-slot.left,.footer-bottom .hfg-slot.c-left{padding-right:0!important}
+.footer-bottom .builder-item--footer-three-widgets{max-width:calc(100% - 70px)}
+@media(max-width:600px){.footer-bottom .builder-item--footer-three-widgets{max-width:calc(100% - 60px);padding-right:8px}}</style>
+</div>	</div>
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer--row footer-bottom layout-full-contained"
+	id="cb-row--footer-desktop-bottom"
+	data-row-id="bottom" data-show-on="desktop">
+	<div
+		class="footer--row-inner footer-bottom-inner footer-content-wrap">
+		<div class="container">
+			<div
+				class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row "
+				data-section="hfg_footer_layout_bottom" >
+				<div class="hfg-slot left"><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div></div></div></div></div></div><div class="hfg-slot c-left"><div class="builder-item desktop-center tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets"
+		data-section="neve_sidebar-widgets-footer-three-widgets"
+		data-item-id="footer-three-widgets">
+		<div class="widget-area">
+		<div 

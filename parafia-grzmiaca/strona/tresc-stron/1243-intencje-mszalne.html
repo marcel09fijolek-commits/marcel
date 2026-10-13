@@ -1,0 +1,380 @@
+<!-- Strona 1243 | Intencje mszalne | https://parafiagrzmiaca.pl/intencje-mszalne/ | zmieniona 2026-09-27T13:09:49 | featured_media 0 -->
+
+<style>
+.page-id-1243 .nv-post-cover{display:none!important;}
+.kx-ms{max-width:820px;margin:16px auto 60px;padding:0 20px 60px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;}
+.kx-ms-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
+.kx-ms-top a{color:#5B6B7D;text-decoration:none;font-size:13.5px;font-weight:600;}
+.kx-ms-top a:hover{color:#1E3A5F;}
+.kx-ms-hero{background:linear-gradient(135deg,#1E3A5F,#12233A);border-radius:18px;padding:30px 32px;margin-bottom:26px;box-shadow:0 10px 30px rgba(18,35,58,.25);}
+.kx-ms-hero h1{color:#F4E9D3;margin:0 0 6px;font-size:23px;}
+.kx-ms-hero p{color:#CBD8E6;margin:0;font-size:14px;}
+.kx-ms-card{background:#FBF8F3;border:1px solid #E9E2D2;border-radius:16px;padding:28px;box-shadow:0 4px 18px rgba(30,58,95,.06);margin-bottom:26px;}
+.kx-ms-card h2{color:#1E3A5F;margin:0 0 18px;font-size:18px;}
+.kx-ms-label{display:block;font-weight:600;color:#26313F;font-size:13.5px;margin-bottom:8px;}
+.kx-ms-churches{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px;}
+.kx-ms-church{border:1px solid #DED2B0;background:#fff;color:#1E3A5F;padding:12px 6px;border-radius:10px;font-size:13.5px;font-weight:700;cursor:pointer;text-align:center;}
+.kx-ms-church.active{background:#1E3A5F;color:#F4E9D3;border-color:#1E3A5F;}
+.kx-ms-mode-tabs{display:flex;gap:6px;margin-bottom:14px;background:#F1ECE0;border-radius:10px;padding:4px;}
+.kx-ms-tab{flex:1;text-align:center;padding:8px 6px;border-radius:8px;font-size:12.5px;font-weight:700;color:#5B6B7D;cursor:pointer;}
+.kx-ms-tab.active{background:#fff;color:#1E3A5F;box-shadow:0 2px 6px rgba(30,58,95,.1);}
+.kx-ms-groups{margin-bottom:4px;}
+.kx-ms-group-title{color:#5B6B7D;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin:10px 0 6px;}
+.kx-ms-days{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:2px;}
+.kx-ms-slot{border:1px solid #DED2B0;background:#fff;color:#26313F;padding:5px 9px;border-radius:14px;font-size:11.5px;cursor:pointer;line-height:1.3;}
+.kx-ms-slot.active{background:#C9A24B;border-color:#C9A24B;color:#1E3A5F;font-weight:700;}
+.kx-ms-other{margin-top:14px;}
+.kx-ms-other input{width:100%;padding:11px 13px;border:1px solid #DED2B0;border-radius:10px;font-size:14.5px;box-sizing:border-box;}
+.kx-ms-custom-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.kx-ms-custom-row input{width:100%;padding:11px 13px;border:1px solid #DED2B0;border-radius:10px;font-size:14.5px;box-sizing:border-box;font-family:inherit;}
+.kx-ms-selected{background:#F1ECE0;border:1px solid #DED2B0;border-radius:10px;padding:10px 14px;font-size:13.5px;color:#1E3A5F;margin:16px 0;font-weight:600;}
+.kx-ms-wolna{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:13.5px;color:#26313F;font-weight:600;}
+.kx-ms-field textarea{width:100%;padding:13px 14px;border:1px solid #DED2B0;border-radius:10px;font-size:15px;box-sizing:border-box;font-family:inherit;min-height:70px;}
+.kx-ms-field textarea:disabled{background:#F1ECE0;color:#9AA6B2;}
+.kx-ms-submit{width:100%;background:#C9A24B;color:#1E3A5F;border:none;padding:15px;font-size:16px;font-weight:700;border-radius:10px;cursor:pointer;margin-top:16px;}
+.kx-ms-submit:hover{background:#b98f39;}
+.kx-ms-submit:disabled{opacity:.6;cursor:default;}
+.kx-ms-msg{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;font-size:14px;}
+.kx-ms-msg.ok{background:#EAF6EC;border:1px solid #BEE0C4;color:#2C6B39;}
+.kx-ms-msg.err{background:#FBEAEA;border:1px solid #E4B7B7;color:#9B3A3A;}
+.kx-ms-list h2{color:#1E3A5F;font-size:18px;margin:0 0 16px;}
+.kx-ms-parish-group{margin-bottom:22px;}
+.kx-ms-parish-group:last-child{margin-bottom:0;}
+.kx-ms-parish-title{display:flex;align-items:center;gap:8px;color:#1E3A5F;font-size:14.5px;font-weight:700;background:#F1ECE0;border-radius:8px;padding:9px 14px;margin-bottom:6px;}
+.kx-ms-parish-title .kx-ms-count{color:#5B6B7D;font-weight:600;font-size:12.5px;}
+.kx-ms-item{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 6px;border-bottom:1px solid #E9E2D2;}
+.kx-ms-item:last-child{border-bottom:none;}
+.kx-ms-badge{background:#C9A24B;color:#1E3A5F;padding:4px 10px;border-radius:14px;font-size:11.5px;font-weight:700;display:inline-block;margin-bottom:5px;}
+.kx-ms-item strong{color:#1E3A5F;display:block;font-size:14.5px;margin-bottom:3px;}
+.kx-ms-item span{color:#444;font-size:13.5px;}
+.kx-ms-item .kx-ms-free{color:#B33;font-style:italic;font-weight:700;}
+.kx-ms-del{background:#dc3545;color:#fff;text-decoration:none;padding:7px 12px;border-radius:7px;font-size:12px;font-weight:700;flex-shrink:0;}
+.kx-ms-empty{color:#5B6B7D;font-size:14px;}
+@media (max-width:560px){.kx-ms-churches{grid-template-columns:1fr 1fr;}.kx-ms-item{flex-direction:column;align-items:flex-start;}}
+</style>
+
+<div class="kx-ms">
+  <div class="kx-ms-top">
+    <a href="/zarzadzanie/">&larr; Wróć do wyboru</a>
+  </div>
+
+  <div class="kx-ms-hero">
+    <h1>Intencje mszalne</h1>
+    <p>Dodawanie i zarządzanie intencjami</p>
+  </div>
+
+  <div class="kx-ms-card">
+    <h2>Nowa intencja</h2>
+
+    <span class="kx-ms-label">Kościół</span>
+    <div class="kx-ms-churches" id="kx-ms-churches">
+      <div class="kx-ms-church" data-v="Grzmiąca">Grzmiąca</div>
+      <div class="kx-ms-church" data-v="Nosibądy">Nosibądy</div>
+      <div class="kx-ms-church" data-v="Sucha">Sucha</div>
+      <div class="kx-ms-church" data-v="Mieszałki">Mieszałki</div>
+    </div>
+
+    <span class="kx-ms-label">Termin</span>
+    <div class="kx-ms-mode-tabs" id="kx-ms-mode-tabs">
+      <div class="kx-ms-tab active" data-mode="list">Z listy terminów</div>
+      <div class="kx-ms-tab" data-mode="custom">Własna data</div>
+    </div>
+
+    <div id="kx-ms-mode-list">
+      <div class="kx-ms-groups" id="kx-ms-groups"><p class="kx-ms-empty">Wczytywanie terminów&#8230;</p></div>
+      <div class="kx-ms-other">
+        <span class="kx-ms-label">Inna godzina (opcjonalnie, jeśli nie ma na liście)</span>
+        <input type="text" id="kx-ms-inna" placeholder="np. 17:30">
+      </div>
+    </div>
+
+    <div id="kx-ms-mode-custom" style="display:none;">
+      <div class="kx-ms-custom-row">
+        <div>
+          <span class="kx-ms-label">Data</span>
+          <input type="date" id="kx-ms-custom-date">
+        </div>
+        <div>
+          <span class="kx-ms-label">Godzina</span>
+          <input type="time" id="kx-ms-custom-time">
+        </div>
+      </div>
+    </div>
+
+    <div class="kx-ms-selected" id="kx-ms-selected">Nie wybrano jeszcze terminu</div>
+
+    <label class="kx-ms-wolna">
+      <input type="checkbox" id="kx-ms-wolna-check">
+      Wolna intencja (bez treści)
+    </label>
+    <div class="kx-ms-field">
+      <textarea id="kx-ms-tresc" placeholder="Treść intencji mszalnej..."></textarea>
+    </div>
+
+    <button type="button" class="kx-ms-submit" id="kx-ms-submit">Zapisz intencję</button>
+    <div class="kx-ms-msg" id="kx-ms-msg"></div>
+  </div>
+
+  <div class="kx-ms-card kx-ms-list">
+    <h2>Wpisane intencje</h2>
+    <div id="kx-ms-listwrap"><p class="kx-ms-empty">Wczytywanie&#8230;</p></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var kosciol = null;
+  var termin = null;
+  var mode = 'list';
+  var DNI = ['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'];
+
+  var churchEls = document.querySelectorAll('.kx-ms-church');
+  churchEls.forEach(function(el){
+    el.addEventListener('click', function(){
+      churchEls.forEach(function(c){ c.classList.remove('active'); });
+      el.classList.add('active');
+      kosciol = el.getAttribute('data-v');
+      updateSelected();
+    });
+  });
+
+  var tabEls = document.querySelectorAll('.kx-ms-tab');
+  tabEls.forEach(function(el){
+    el.addEventListener('click', function(){
+      tabEls.forEach(function(t){ t.classList.remove('active'); });
+      el.classList.add('active');
+      mode = el.getAttribute('data-mode');
+      document.getElementById('kx-ms-mode-list').style.display = (mode === 'list') ? '' : 'none';
+      document.getElementById('kx-ms-mode-custom').style.display = (mode === 'custom') ? '' : 'none';
+      updateSelected();
+    });
+  });
+
+  function computeCustomTermin(){
+    var d = document.getElementById('kx-ms-custom-date').value;
+    var t = document.getElementById('kx-ms-custom-time').value;
+    if(!d || !t) return null;
+    var p = d.split('-');
+    var dateObj = new Date(parseInt(p[0],10), parseInt(p[1],10)-1, parseInt(p[2],10));
+    var dayName = DNI[dateObj.getDay()];
+    return dayName + ' (' + p[2] + '.' + p[1] + ')|' + t;
+  }
+
+  function getTermin(){
+    if(mode === 'custom'){ return computeCustomTermin(); }
+    return termin;
+  }
+
+  function updateSelected(){
+    var box = document.getElementById('kx-ms-selected');
+    var t = getTermin();
+    var inna = (mode === 'list') ? document.getElementById('kx-ms-inna').value.trim() : '';
+    var godzina = inna || (t ? t.split('|')[1] : null);
+    var dzien = t ? t.split('|')[0] : null;
+    if(kosciol && dzien && godzina){
+      box.textContent = kosciol + ' — ' + dzien + ' (' + godzina + ')';
+    } else if (kosciol && inna) {
+      box.textContent = kosciol + ' — inna godzina: ' + inna + ' (wybierz też dzień z listy)';
+    } else {
+      box.textContent = 'Nie wybrano jeszcze terminu';
+    }
+  }
+
+  document.getElementById('kx-ms-inna').addEventListener('input', updateSelected);
+  document.getElementById('kx-ms-custom-date').addEventListener('input', updateSelected);
+  document.getElementById('kx-ms-custom-time').addEventListener('input', updateSelected);
+
+  document.getElementById('kx-ms-wolna-check').addEventListener('change', function(e){
+    var t = document.getElementById('kx-ms-tresc');
+    if(e.target.checked){ t.value = ''; t.disabled = true; }
+    else { t.disabled = false; }
+  });
+
+  function renderGroups(selectEl){
+    var wrap = document.getElementById('kx-ms-groups');
+    if(!selectEl){
+      wrap.innerHTML = '<p class="kx-ms-empty">Nie udało się wczytać terminów &mdash; sesja mogła wygasnąć. <a href="/zarzadzanie/">Zaloguj się ponownie</a>.</p>';
+      return;
+    }
+    var out = '';
+    var groups = selectEl.querySelectorAll('optgroup');
+    groups.forEach(function(g){
+      out += '<div class="kx-ms-group-title">' + g.getAttribute('label') + '</div><div class="kx-ms-days">';
+      var opts = g.querySelectorAll('option');
+      opts.forEach(function(o){
+        var val = o.getAttribute('value');
+        var label = o.textContent;
+        out += '<div class="kx-ms-slot" data-v="' + val.replace(/"/g,'&quot;') + '">' + label + '</div>';
+      });
+      out += '</div>';
+    });
+    wrap.innerHTML = out;
+    wrap.querySelectorAll('.kx-ms-slot').forEach(function(el){
+      el.addEventListener('click', function(){
+        wrap.querySelectorAll('.kx-ms-slot').forEach(function(s){ s.classList.remove('active'); });
+        el.classList.add('active');
+        termin = el.getAttribute('data-v');
+        updateSelected();
+      });
+    });
+  }
+
+  function loadForm(){
+    fetch('/panel/', { credentials: 'include' }).then(function(r){ return r.text(); }).then(function(html){
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var sel = doc.querySelector('select[name="wybrany_termin"]');
+      renderGroups(sel);
+      renderList(doc);
+    }).catch(function(){
+      renderGroups(null);
+      document.getElementById('kx-ms-listwrap').innerHTML = '<p class="kx-ms-empty">Błąd wczytywania.</p>';
+    });
+  }
+
+  var PARAFIE_KOLEJNOSC = ['Grzmiąca','Nosibądy','Sucha','Mieszałki'];
+
+  function extractDelId(href){
+    var m = href.match(/del=([0-9]+)/);
+    return m ? m[1] : '';
+  }
+
+  function renderList(doc){
+    var wrap = document.getElementById('kx-ms-listwrap');
+    var items = doc.querySelectorAll('.list-item');
+    if(!items.length){
+      wrap.innerHTML = '<p class="kx-ms-empty">Brak wpisanych intencji.</p>';
+      return;
+    }
+
+    var groups = {};
+    var order = [];
+
+    items.forEach(function(it){
+      var badge = it.querySelector('.badge');
+      var strong = it.querySelector('strong');
+      var span = it.querySelector('span');
+      var del = it.querySelector('a[href*="del="]');
+      var isFree = span && span.classList.contains('wolna-intencja');
+      var parafia = badge ? badge.textContent.trim() : 'Inne';
+
+      if(!groups[parafia]){ groups[parafia] = []; order.push(parafia); }
+
+      var delId = del ? extractDelId(del.getAttribute('href')) : '';
+
+      groups[parafia].push(
+        '<div class="kx-ms-item"><div>' +
+        (strong ? '<strong>' + strong.textContent.trim() + '</strong>' : '') +
+        '<span class="' + (isFree ? 'kx-ms-free' : '') + '">' + (span ? span.textContent.trim() : '') + '</span>' +
+        '</div>' +
+        (delId ? '<button type="button" class="kx-ms-del" data-del-id="' + delId + '">Usuń</button>' : '') +
+        '</div>'
+      );
+    });
+
+    var kolejnosc = PARAFIE_KOLEJNOSC.concat(order.filter(function(p){ return PARAFIE_KOLEJNOSC.indexOf(p) === -1; }));
+
+    var out = '';
+    kolejnosc.forEach(function(parafia){
+      if(!groups[parafia]) return;
+      out += '<div class="kx-ms-parish-group">' +
+        '<div class="kx-ms-parish-title">&#9962; ' + parafia + ' <span class="kx-ms-count">(' + groups[parafia].length + ')</span></div>' +
+        groups[parafia].join('') +
+        '</div>';
+    });
+
+    wrap.innerHTML = out;
+
+    wrap.querySelectorAll('.kx-ms-del').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var id = btn.getAttribute('data-del-id');
+        var ok = window.confirm('Na pewno usunąć tę intencję?');
+        if (!ok) { return; }
+        btn.disabled = true;
+        btn.textContent = '...';
+        fetch('/panel/?del=' + id, { credentials: 'include' }).then(function(r){ return r.text(); }).then(function(html){
+          var doc2 = new DOMParser().parseFromString(html, 'text/html');
+          renderGroups(doc2.querySelector('select[name="wybrany_termin"]'));
+          renderList(doc2);
+        }).catch(function(){
+          btn.disabled = false;
+          btn.textContent = 'Usuń';
+          alert('Nie udało się usunąć. Spróbuj ponownie.');
+        });
+      });
+    });
+  }
+
+  document.getElementById('kx-ms-submit').addEventListener('click', function(){
+    var btn = this;
+    var msg = document.getElementById('kx-ms-msg');
+    var t = getTermin();
+    var innaVal = (mode === 'list') ? document.getElementById('kx-ms-inna').value.trim() : '';
+    var trescVal = document.getElementById('kx-ms-tresc').value;
+    var wolna = document.getElementById('kx-ms-wolna-check').checked;
+
+    if(!kosciol){ alert('Wybierz kościół.'); return; }
+    if(!t && !innaVal){
+      alert(mode === 'custom' ? 'Wybierz datę i godzinę.' : 'Wybierz termin z listy lub wpisz inną godzinę.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Zapisywanie...';
+    msg.style.display = 'none';
+
+    var body = 'kosciol=' + encodeURIComponent(kosciol) +
+      '&wybrany_termin=' + encodeURIComponent(t || '') +
+      '&inna_godzina=' + encodeURIComponent(innaVal) +
+      '&tresc=' + encodeURIComponent(wolna ? '' : trescVal) +
+      '&dodaj_intencje=1';
+
+    fetch('/panel/', {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body
+    }).then(function(r){ return r.text(); }).then(function(html){
+      if(html.indexOf('Wyloguj') === -1){
+        msg.className = 'kx-ms-msg err';
+        msg.textContent = 'Sesja wygasła. Zaloguj się ponownie przez /zarzadzanie/.';
+        msg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Zapisz intencję';
+        return;
+      }
+      msg.className = 'kx-ms-msg ok';
+      msg.textContent = 'Intencja zapisana. Kościół pozostał wybrany — możesz dodać kolejną.';
+      msg.style.display = 'block';
+
+      document.getElementById('kx-ms-inna').value = '';
+      document.getElementById('kx-ms-custom-date').value = '';
+      document.getElementById('kx-ms-custom-time').value = '';
+      document.getElementById('kx-ms-tresc').value = '';
+      document.getElementById('kx-ms-tresc').disabled = false;
+      document.getElementById('kx-ms-wolna-check').checked = false;
+      termin = null;
+      mode = 'list';
+      tabEls.forEach(function(t){ t.classList.toggle('active', t.getAttribute('data-mode') === 'list'); });
+      document.getElementById('kx-ms-mode-list').style.display = '';
+      document.getElementById('kx-ms-mode-custom').style.display = 'none';
+      updateSelected();
+
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      renderGroups(doc.querySelector('select[name="wybrany_termin"]'));
+      renderList(doc);
+
+      btn.disabled = false;
+      btn.textContent = 'Zapisz intencję';
+    }).catch(function(){
+      msg.className = 'kx-ms-msg err';
+      msg.textContent = 'Błąd połączenia. Spróbuj ponownie.';
+      msg.style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Zapisz intencję';
+    });
+  });
+
+  loadForm();
+})();
+</script>
+
